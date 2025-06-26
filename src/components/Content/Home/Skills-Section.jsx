@@ -1,38 +1,74 @@
-// src/components/ContentSection/SkillsSection.jsx
 import React from 'react';
-import './Skills.css';
+import '../../../styles/tailwind-component.output.css';
 
 const SkillsSection = () => (
-  <div className="skills-section">
+  <div 
+    id="skills-section"
+    className="fixed top-0 left-0 w-full h-screen flex flex-col justify-center items-center pointer-events-none z-[1]"
+  >
+    <div 
+      id="skills-inner"
+      className="relative z-[1] pointer-events-auto w-full max-w-6xl px-4"
+    >
+      {/* Título */}
+      <h3 
+        id="software-experience"
+        className="text-[#D4FF00] text-center mb-8 md:mb-12
+          text-2xl sm:text-3xl md:text-4xl lg:text-5xl
+          relative top-0 sm:top-8 md:top-12 lg:-top-10
+          px-4"
+      >
+        Software Experience
+      </h3>
 
-    <div className="skills-inner"> 
-<h3 className="software-experience">Software Experience</h3>
-    <div className="skills-grid">
-      {[
-        { name: 'Javascript', src: 'https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg' },
-        { name: 'HTML5', src: 'https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg' },
-        { name: 'CSS', src: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg' },
-        { name: 'React', src: 'https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg' },
-        { name: 'Node.js', src: 'https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg' },
-        { name: 'MongoDB', src: './mongodb.png' },
-        { name: 'Figma', src: 'https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg' },
-        { name: 'Github', src: './git.png' },
-        { name: 'Postman', src: './postman.png' },
-        { name: 'Neovim', src: './neovim.png' },
-        { name: 'Linux', src: './linux.png' },
-        { name: 'Docker', src: './docker.png' }
-      ].map(({ name, src }) => (
-        <div className="skill-item" key={name}>
-          <span className="skill-icon">{name}</span>
-          <img width="45px" height="45px" src={src} alt={name} className="skill-icon" />
-        </div>
-      ))}
-    </div>
-
-
-    </div>
+      {/* Grid de habilidades */}
+      <div 
+        id="skills-grid"
+        className="grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6
+          gap-1 sm:gap-4 md:gap-4
+          w-full max-w-5xl mx-auto
+          relative top-0 sm:-top-8 md:-top-12 lg:-top-0
+          px-2 sm:px-4"
+      >
+        {[
+          { name: 'Javascript', src: 'https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg' },
+          { name: 'HTML5', src: 'https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg' },
+          { name: 'CSS', src: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg' },
+          { name: 'React', src: 'https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg' },
+          { name: 'Node.js', src: 'https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg' },
+          { name: 'MongoDB', src: './mongodb.png' },
+          { name: 'Figma', src: 'https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg' },
+          { name: 'Github', src: './git.png' },
+          { name: 'Postman', src: './postman.png' },
+          { name: 'Neovim', src: './neovim.png' },
+          { name: 'Linux', src: './linux.png' },
+          { name: 'Docker', src: './docker.png' }
+        ].map(({ name, src }) => (
+          <div 
+            key={name}
+            className="flex flex-col items-center justify-center
+              bg-transparent p-2 rounded
+              transition-all duration-300 hover:transform hover:-translate-y-1 hover:scale-105
+              group"
+          >
+            <img 
+              src={src} 
+              alt={name}
+              className="w-8 h-8 xs:w-10 xs:h-10 sm:w-12 sm:h-12 md:w-14 md:h-14
+                transition-transform duration-300 group-hover:scale-110"
+            />
+            <span 
+              className={`text-white text-xs xs:text-sm sm:text-base mt-2
+                ${name === 'Javascript' ? 'relative right-0' : ''}
+                ${name === 'HTML5' ? 'relative right-0' : ''}`}
+            >
+              {name}
+            </span>
+          </div>
+        ))}
       </div>
+    </div>
+  </div>
 );
 
 export default SkillsSection;
-

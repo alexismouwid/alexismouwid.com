@@ -125,8 +125,8 @@ const Perfil = () => {
           </a>
         </section>
 
-        <p class="text-center mt-4 text-xl">
-          Desarrollador web <span class="text-[#D4FF00]">Junior</span>
+        <p class="font-bebas text-center mt-4 text-xl">
+          Desarrollador web <span class=" text-[#D4FF00]">Junior</span>
         </p>
       </header>
     </div>

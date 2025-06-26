@@ -58,7 +58,7 @@ const scrollToHome = () => {
     <>
 
       <div className='App'> 
-        <div className='content'> 
+       
  <Header 
       menuOpen={menuOpen}
       setMenuOpen={setMenuOpen}
@@ -74,7 +74,7 @@ const scrollToHome = () => {
           <FloatingWhatsAppButton />
 
           <button onClick={toggleApp} title="Ir a ModoScroll" className="changemodeButton">ModoScroll</button>
-        </div>
+        
 
       </div>
   

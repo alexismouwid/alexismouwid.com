@@ -2,8 +2,16 @@
 
 themes: {
   --color-primary: #D4FF00;
+  
 }
 
+@layer utilities {
+  .font-bebas {
+    font-family: 'Bebas Neue', sans-serif;
+  }
+
+}
+ 
 .hover-skills {
 items-center hover:scale-110 transition-all duration-300 ease-in-out group;
 }

@@ -10,7 +10,7 @@ gsap.registerPlugin(ScrollTrigger);
 export default function useScrollTrigger() {
   useGSAP(() => {
 
-    gsap.fromTo(".hero-inner",
+    gsap.fromTo("#hero-inner",
       { scale: 0.6, autoAlpha: 0 },
       { scale: 0.8, 
         autoAlpha: 1,
@@ -22,7 +22,7 @@ export default function useScrollTrigger() {
 
     const tl = gsap.timeline({
       scrollTrigger: {
-        trigger: ".content-container",
+        trigger: "#content-container",
         start: "top top",
         end: "bottom bottom",
         scrub: true,
@@ -34,7 +34,7 @@ export default function useScrollTrigger() {
 
     
 
-    tl.from(".hero-inner",{
+    tl.from("#hero-inner",{
         scale: 0.8,
             autoAlpha: 1,
       duration: 0.01
@@ -42,37 +42,37 @@ export default function useScrollTrigger() {
 
 
     
-    tl.fromTo(".hero-inner",
+    tl.fromTo("#hero-inner",
       { scale: 0.8, autoAlpha: 0 },
       { scale: 1, autoAlpha: 1, duration: 1 }
     );
 
     // Desaparece la sección hero
-    tl.to(".hero-inner", {
+    tl.to("#hero-inner", {
       scale: 2,
       autoAlpha: 0,
       duration: 2
     });
 
     // Aparece la sección perfil justo después
-    tl.fromTo(".profile-inner",
+    tl.fromTo("#profile-inner",
       { scale: 0.4, autoAlpha: 0 },
       { scale: 1, autoAlpha: 1, duration: 3 }
     );
 
-    tl.to(".profile-inner", {
+    tl.to("#profile-inner", {
       scale: 2,
       autoAlpha: 0,
       duration: 2
     });
 
     // Aparece la sección habilidades justo después
-    tl.fromTo(".skills-inner",
+    tl.fromTo("#skills-inner",
       { scale: 1.2, autoAlpha: 0 },
       { scale: 1, autoAlpha: 1, duration: 4 }
     );
 
-    tl.to(".skills-inner", {
+    tl.to("#skills-inner", {
       scale: 2,
       autoAlpha: 0,
       duration: 4
