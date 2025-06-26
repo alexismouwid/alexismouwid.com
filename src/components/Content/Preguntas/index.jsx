@@ -32,23 +32,23 @@ const Preguntas = forwardRef((props, ref) => {
   };
 
   return (
-    <div ref={ref} className="preguntas-contenedor">
-      <div className="preguntas-left ">
+    <div ref={ref} id="preguntas-contenedor">
+      <div id="preguntas-left ">
         <h2>
           Preguntas frecuentes
         </h2>
-        <div className="preguntas-image"> <img src="./diseño.jpg" alt="preguntas" className="image-proyect" /></div>
+        <div id="preguntas-image"> <img src="./diseño.jpg" alt="preguntas" id="image-proyect" /></div>
       </div>
 
-      <div className="preguntas-right " >
+      <div id="preguntas-right " >
         {preguntas.map((item, index) => (
-          <div key={index} className="preguntas-item">
-            <div className="preguntas-pregunta ejeX" onClick={() => togglePregunta(index)}>
+          <div key={index} id="preguntas-item">
+            <div id="preguntas-pregunta ejeX" onClick={() => togglePregunta(index)}>
               <span>{item.pregunta}</span>
-              <span className="icono">{activa === index ? "−" : "+"}</span>
+              <span id="icono">{activa === index ? "−" : "+"}</span>
             </div>
             {activa === index && (
-              <div className="preguntas-respuesta">{item.respuesta}</div>
+              <div id="preguntas-respuesta">{item.respuesta}</div>
             )}
           </div>
         ))}

@@ -6,7 +6,7 @@ const Servicios = ({ refServicios }) => {
     <div 
       id="serv-title"
       ref={refServicios}
-      class="fixed w-full flex flex-col items-center justify-center z-1 px-4 py-16 bg-[linear-gradient(to_right,_#0f2027,_#8e2de2)] relative bottom-240 lg:bottom-185"
+      class="fixed w-full flex flex-col items-center justify-center z-1 px-4 py-16 bg-[linear-gradient(to_right,_#0f2027,_#8e2de2)] relative bottom-228 lg:bottom-180"
     >
       <p 
         id="servicios-titulo"
