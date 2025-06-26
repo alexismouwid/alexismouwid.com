@@ -79,12 +79,12 @@ export default function useScrollTrigger() {
     });
 
     // Aparece y desaparece el título de servicios
-    tl.fromTo(".serv-title",
+    tl.fromTo("#serv-title",
       { scale: 1.2, autoAlpha: 0 },
       { scale: 1, autoAlpha: 1, duration: 2 }
     );
 
-    tl.to(".serv-title", {
+    tl.to("#serv-title", {
       scale: 2,
       autoAlpha: 0,
       duration: 3

@@ -48,14 +48,19 @@ const SkillsSection = () => (
             key={name}
             className="flex flex-col items-center justify-center
               bg-transparent p-2 rounded
-              transition-all duration-300 hover:transform hover:-translate-y-1 hover:scale-105
+              hover:scale-110 transition-all duration-300 ease-in-out
               group"
           >
             <img 
               src={src} 
               alt={name}
-              className="w-8 h-8 xs:w-10 xs:h-10 sm:w-12 sm:h-12 md:w-14 md:h-14
-                transition-transform duration-300 group-hover:scale-110"
+              className={`w-8 h-8 xs:w-10 xs:h-10 sm:w-12 sm:h-12 md:w-14 md:h-14
+                group-hover:scale-110 transition-all duration-300 ease-in-out
+                ${name === 'Javascript' || name === 'HTML5' || name === 'CSS' || name === 'React' || name === 'Node.js' || name === 'Figma' ? 'group-hover:rotate-25' : ''}
+                ${name === 'MongoDB' || name === 'Github' || name === 'Docker' ? 'group-hover:-rotate-25' : ''}
+                ${name === 'Neovim' ? 'group-hover:-rotate-720' : ''}
+                ${name === 'Linux' ? 'group-hover:rotate-720' : ''}
+                ${name === 'React' ? 'group-hover:-rotate-35' : ''}`}
             />
             <span 
               className={`text-white text-xs xs:text-sm sm:text-base mt-2

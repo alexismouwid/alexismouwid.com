@@ -5,10 +5,10 @@ const HeroSection = forwardRef((props, ref) => {
   return (
     <div 
       id="hero-section" 
-      class="fixed mx-auto w-full h-dvh flex flex-col justify-center pointer-events-none z-1" 
+      class="fixed mx-auto w-full h-dvh flex flex-col justify-center pointer-events-none z-1 lg:left-60" 
       ref={ref}
     >
-      <div id="hero-inner" class="relative lg:mx-auto pointer-events-auto z-1 bottom-10 sm:bottom-20 px-4 sm:px-0">
+      <div id="hero-inner" class="relative lg:left-20 pointer-events-auto z-1 bottom-10 sm:bottom-20 px-4 sm:px-0">
         {/* Títulos principales */}
         <div id="el-h1" class="text-center sm:text-left">
           <p id="yo-puedo" class="text-5xl sm:text-5xl lg:text-7xl text-white relative top-1">
