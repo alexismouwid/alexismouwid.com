@@ -120,7 +120,7 @@ html {
   margin: 0 auto;
   padding: 0;
   text-align: center;
-  background-color: #242424;
+	  background: linear-gradient(to right, #0f2027, #8e2de2);
 }
 
 /* App principal */
@@ -140,6 +140,7 @@ html {
   justify-content: center;
   align-items: center;
   transition: all 0.3s ease;
+	background-color: black;
 }
 
 /* Logo */

@@ -91,53 +91,53 @@ export default function useScrollTrigger() {
     });
 
     // Aparece y desaparece la sección de proyectos
-    tl.fromTo(".proyecto1", 
+    tl.fromTo("#proyecto-1", 
       { scale: 1.2, autoAlpha: 0 },
       { scale: 1, autoAlpha: 1, duration: 2 }
     );
 
-    tl.to(".proyecto1", {
+    tl.to("#proyecto-1", {
       scale: 2,
       autoAlpha: 0,
       duration: 3
     });
 // Aparece y desaparece la sección de proyectos
-    tl.fromTo(".proyecto2", 
+    tl.fromTo("#proyecto-2", 
       { scale: 1.2, autoAlpha: 0 },
       { scale: 1, autoAlpha: 1, duration: 2 }
     );
 
-    tl.to(".proyecto2", {
+    tl.to("#proyecto-2", {
       scale: 2,
       autoAlpha: 0,
       duration: 3
     });
 // Aparece y desaparece la sección de proyectos
-    tl.fromTo(".proyecto3", 
+    tl.fromTo("#proyecto-3", 
       { scale: 1.2, autoAlpha: 0 },
       { scale: 1, autoAlpha: 1, duration: 2 }
     );
 
-    tl.to(".proyecto3", {
+    tl.to("#proyecto-3", {
       scale: 2,
       autoAlpha: 0,
       duration: 3
     });
 
     // Aparece y desaparece la sección de proyectos
-   tl.fromTo(".proyecto4", 
+   tl.fromTo("#proyecto-4", 
       { scale: 1.2, autoAlpha: 0 },
       { scale: 1, autoAlpha: 1, duration: 2 }
     );
 
-    tl.to(".proyecto4", {
+    tl.to("#proyecto-4", {
       scale: 2,
       autoAlpha: 0,
       duration: 3
     });
 
     // Aparece y desaparece la sección de proyectos
-    tl.fromTo(".preguntas-contenedor", 
+    tl.fromTo("#preguntas-contenedor", 
       { scale: 1.2, autoAlpha: 0 },
       { scale: 1, autoAlpha: 1, duration: 2 }
     );
