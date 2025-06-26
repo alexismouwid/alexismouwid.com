@@ -46,6 +46,9 @@ const Perfil = () => {
             </svg>
           </span>
           <p class="leading-tight font-bebas text-[1.6rem]">Alexis Vega</p>
+<p class="font-bebas text-center mt-4 text-2xl">
+          Desarrollador web <span class=" text-[#D4FF00]">Junior</span>
+        </p>
         </header>
 
         <section class="flex gap-2 justify-center flex-wrap t">
@@ -125,9 +128,7 @@ const Perfil = () => {
           </a>
         </section>
 
-        <p class="font-bebas text-center mt-4 text-xl">
-          Desarrollador web <span class=" text-[#D4FF00]">Junior</span>
-        </p>
+        
       </header>
     </div>
   );
