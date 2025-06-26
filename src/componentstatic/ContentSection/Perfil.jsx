@@ -2,14 +2,17 @@ import React from "react";
 import '../../styles/tailwind-component.output.css';
 import sprite from './sprite.svg';
 
+
 const Perfil = () => {
+
   return (
-    <div className="w-full lg:w-[30%] lg:min-h-[100svh] h-dvh text-white relative top-30 mx-auto">
+    <div class="w-full lg:w-[30%] lg:min-h-[100svh] h-dvh text-white relative top-30 mx-auto">
       <header>
         <img
+          id="perfil-image"
           alt="alexis sonriendo"
           src="/alexis.jpg"
-          className="
+          class="
             h-66 object-cover
             mask-radial-at-center
             mask-radial-from-50%
@@ -18,10 +21,10 @@ const Perfil = () => {
             animation-pulse
           "
         />
-        <header className="flex flex-col justify-center items-center mb-8 -mt-10">
+        <header class="flex flex-col justify-center items-center mb-8 -mt-10">
           <span
-            className="
-              text-sky-400 text-xl font-mono px-3 py-1
+            class="
+              text-[#D4FF00] text-xl font-mono px-3 py-1
               border border-sky-500/50 rounded-full shadow-sm
               justify-center bg-black/65 cursor-crosshair z-10
               inline-flex items-center
@@ -29,7 +32,7 @@ const Perfil = () => {
           >
             @mrcommitt
             <svg
-              className="ml-1 size-5 text-skv-400 inline"
+              class="ml-1 size-5 text-skv-400 inline"
               fill="currentColor"
               viewBox="0 0 20 20"
               aria-hidden="true"
@@ -42,42 +45,42 @@ const Perfil = () => {
               />
             </svg>
           </span>
-          <p className="leading-tight font-bebas text-[1.6rem]">Alexis Vega</p>
+          <p class="leading-tight font-bebas text-[1.6rem]">Alexis Vega</p>
         </header>
 
-        <section className="flex gap-2 justify-center flex-wrap">
+        <section class="flex gap-2 justify-center flex-wrap t">
           {/* Twitch */}
           <a
-            className="p-2 size-10 sm:size-12 flex bg-violet-100 items-center justify-center rounded-full hover:bg-purple-200 hover:scale-110 transition-transform animation-slide-up-fade"
+            class="p-2 size-10 sm:size-12 flex bg-violet-100 items-center justify-center rounded-full hover:bg-purple-200 hover:scale-110 transition-transform animation-slide-up-fade"
             href="https://twitch.tv/alexis"
             target="_blank"
             rel="noreferrer"
             aria-label="twitch"
             title="Ir a Twich de @alexis"
           >
-            <svg className="w-6 h-6" width="28" height="28" aria-hidden="true">
+            <svg class="w-6 h-6" width="28" height="28" aria-hidden="true">
               <use href={`${sprite}#twitch`} />
             </svg>
           </a>
 
           {/* GitHub */}
           <a
-            className="p-2 size-10 sm:size-12 flex bg-zinc-900 items-center justify-center rounded-full hover:bg-gray-800 hover:scale-110 transition-transform"
-            href="https://github.com/alexis"
+            class="p-2 size-10 sm:size-12 flex bg-zinc-900 items-center justify-center rounded-full hover:bg-gray-800 hover:scale-110 transition-transform"
+            href="https://github.com/alexismouwid"
             target="_blank"
             rel="noreferrer"
             aria-label="GitHub"
             title="Ir al GitHub de @alexis"
           >
-            <svg className="w-6 h-6 text-white" width="28" height="28" aria-hidden="true">
+            <svg class="w-6 h-6 text-white" width="28" height="28" aria-hidden="true">
               <use href={`${sprite}#github`} />
             </svg>
           </a>
 
           {/* Instagram */}
           <a
-            className="p-2 size-10 sm:size-12 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
-            href="https://instagram.com/alexis"
+            class="p-2 size-10 sm:size-12 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
+            href="https://instagram.com/alexismouwid"
             target="_blank"
             rel="noreferrer"
             aria-label="Instagram"
@@ -95,35 +98,35 @@ const Perfil = () => {
          
           {/* X (Twitter) */}
           <a
-            className="p-2 size-10 sm:size-12 flex bg-black items-center justify-center rounded-full hover:bg-gray-800 hover:scale-110 transition-transform"
+            class="p-2 size-10 sm:size-12 flex bg-black items-center justify-center rounded-full hover:bg-gray-800 hover:scale-110 transition-transform"
             href="https://x.com/alexis"
             target="_blank"
             rel="noreferrer"
             aria-label="X"
             title="Ir al perfil de X de @alexis"
           >
-            <svg className="w-6 h-6 text-white" width="28" height="28" aria-hidden="true">
+            <svg class="w-6 h-6 text-white" width="28" height="28" aria-hidden="true">
               <use href={`${sprite}#x`} />
             </svg>
           </a>
 
           {/* LinkedIn */}
           <a
-            className="bg-white hover:bg-black-200 p-2 size-10 sm:size-12 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
+            class="bg-white hover:bg-black-200 p-2 size-10 sm:size-12 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
             href="https://linkedin.com/in/alexis"
             target="_blank"
             rel="noreferrer"
             aria-label="LinkedIn"
             title="Ir al LinkedIn de @alexis"
           >
-            <svg className="w-6 h-6 text-white" width="28" height="28" aria-hidden="true">
+            <svg class="w-6 h-6 text-white" width="28" height="28" aria-hidden="true">
               <use href={`${sprite}#linkedin`} />
             </svg>
           </a>
         </section>
 
-        <p className="text-center mt-4 text-xl">
-          Desarrollador web <span className="text-sky-400">Junior</span>
+        <p class="text-center mt-4 text-xl">
+          Desarrollador web <span class="text-[#D4FF00]">Junior</span>
         </p>
       </header>
     </div>

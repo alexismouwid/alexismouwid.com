@@ -16,14 +16,13 @@ const ContentSection = forwardRef((props, ref) => {
  
   useGSAP(() => {
 
-     const splitText = new SplitText(".seccion-primaria p", { type: "words, chars, lines" });
+     const splitText = new SplitText("#visualizar", { type: "words, chars, lines" });
 
-    const splitText2 = new SplitText(".seccion-primaria h2", { type: "words, chars, lines" });
     
-    const splitText3 = new SplitText(".perfil-title", { type: "words, chars, lines" });
+    const splitText2 = new SplitText("#cuento", { type: "words, chars, lines" });
 const tl = gsap.timeline();
    
-    tl.from(splitText2.chars, {
+    tl.from(splitText.chars, {
         duration: 0.5,
         y: 20,
         stagger: 0.1,
@@ -31,7 +30,7 @@ const tl = gsap.timeline();
 				filter: "blur(10px)",
 
      })
-.from(".perfil-image", {
+.from("#perfil-image", {
 	  	duration: 0.5,
 			scale: .11,
 	    opacity: 0,
@@ -46,7 +45,7 @@ const tl = gsap.timeline();
         filter: "blur(10px)",
      })
 
-      .from(".habilidad-column", {
+      .from("#grid-skills", {
       x: 500,
       y: 500,
       opacity: 0,
@@ -55,7 +54,7 @@ const tl = gsap.timeline();
     }, "<")
 
 
-        .from(splitText3.words, {
+        .from(splitText2.words, {
         duration: 0.1,
         y: 20,
         stagger: 0.1,

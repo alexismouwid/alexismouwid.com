@@ -73,7 +73,7 @@ const scrollToHome = () => {
      <div id="n8n-chat" />
           <FloatingWhatsAppButton />
 
-          <button onClick={toggleApp} className="changemodeButton">ModoScroll</button>
+          <button onClick={toggleApp} title="Ir a ModoScroll" className="changemodeButton">ModoScroll</button>
         </div>
 
       </div>
