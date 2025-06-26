@@ -10,7 +10,7 @@ const Servicios = ({ refServicios }) => {
     >
       <p 
         id="servicios-titulo"
-        class="text-[2rem] lg:text-[3rem] font-extrabold mb-12 text-center bg-gradient-to-r from-[#D4FF00] via-[#0084ff] to-[#00ffd4] bg-clip-text text-transparent mx-auto"
+        class="text-[2.4rem] lg:text-[3rem] font-extrabold mb-12 text-center bg-gradient-to-r from-[#D4FF00] via-[#0084ff] to-[#00ffd4] bg-clip-text text-transparent mx-auto relative top-3"
       >
         Ofrezco
       </p>
