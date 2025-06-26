@@ -11,13 +11,13 @@ const HeroSection = forwardRef((props, ref) => {
       <div id="hero-inner" class="relative lg:left-20 pointer-events-auto z-1 bottom-10 sm:bottom-20 px-4 sm:px-0">
         {/* Títulos principales */}
         <div id="el-h1" class="text-center sm:text-left">
-          <p id="yo-puedo" class="text-5xl sm:text-5xl lg:text-7xl text-white relative top-1">
+          <p id="yo-puedo" class="text-5xl sm:text-5xl lg:text-7xl text-white relative top-1 mb-7">
             Yo puedo
           </p>
-          <p id="visco" class="text-6xl sm:text-6xl lg:text-8xl text-[#D4FF00] relative top-1">
+          <p id="visco" class="text-6xl sm:text-6xl lg:text-8xl text-[#D4FF00] relative top-1 ">
             Visualizar
           </p>
-          <p id="yo-puedo" class="text-5xl sm:text-5xl lg:text-7xl text-white relative top-1">
+          <p id="yo-puedo" class="text-5xl sm:text-5xl lg:text-7xl text-white relative top-1 mt-7">
             Su Idea
           </p>
         </div>
