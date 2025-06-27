@@ -24,7 +24,7 @@ const Perfil = () => {
         <header class="flex flex-col justify-center items-center mb-8 -mt-10">
           <span
             class="
-              text-[#D4FF00] text-xl font-mono px-3 py-1
+              text-sky-400 text-xl font-mono px-3 py-1
               border border-sky-500/50 rounded-full shadow-sm
               justify-center bg-black/65 cursor-crosshair z-10
               inline-flex items-center
