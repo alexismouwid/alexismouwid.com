@@ -59,14 +59,12 @@ export default function App( {toggleApp} ) {
           bottom-[9rem]
           right-[0rem]
           z-[1000]
-          lg:hover:scale-400
-          lg:hover:right-[40rem]
-          lg:hover:bottom-[15rem]
-           hover:bg-sky-500
+          lg:hover:scale-125
            hover:z-[1000]
           hover:font-bold
-          hover:opacity-100
-          transition-all duration-2000 ease-in-out
+          hover:opacity-125
+          hover:contrast-125
+          transition-all duration-300 ease-in-out
     group">
     <img src="/changemode.png" alt="GitHub" width="60" height="38" class="  rounded" />
     <span class="

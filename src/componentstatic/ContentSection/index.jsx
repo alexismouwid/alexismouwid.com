@@ -72,7 +72,7 @@ const tl = gsap.timeline();
 
   return (
     <>
-      <div class="w-full min-h-screen mx-auto text-white justify-center items-center flex flex-col lg:flex-row bg-[linear-gradient(to_right,_#0f2027,_#8e2de2)]">
+      <div class="w-full min-h-screen mx-auto text-white justify-center items-center flex flex-col lg:flex-row bg-degrade bg-parte-1">
  <div class="flex flex-col lg:flex-row  mx-auto p-6 gap-2 bg-black bg-transparent" ref={ref}>
         {/* Sección 1: Hero */}
         <Contacto />

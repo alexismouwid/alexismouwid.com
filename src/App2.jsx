@@ -82,16 +82,13 @@ const scrollToHome = () => {
           fixed
           p-2
           bottom-[9rem]
-          right-[0rem]
+          right-[1rem]
           z-[1000]
-           lg:hover:scale-400
-           lg:hover:right-[40rem]
-           lg:hover:bottom-[15rem]
-            hover:bg-sky-500
+           lg:hover:scale-125
            hover:z-[1000]
           hover:font-bold
           hover:opacity-100
-          transition-all duration-2000 ease-in-out
+          transition-all duration-300 ease-in-out
     group">
            <img src="/changemode.png" alt="GitHub" width="60" height="38" class="group:rotate-360  rounded" />
     <span class="

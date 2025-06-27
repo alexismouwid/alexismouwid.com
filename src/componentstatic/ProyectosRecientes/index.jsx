@@ -17,7 +17,7 @@ const ProyectosRecientes = forwardRef((props, ref) => {
   }, []);
 
   return (
-    <section class="w-full px-4 py-12 text-white bg-[linear-gradient(to_right,_#0f2027,_#8e2de2)]">
+    <section class="w-full px-4 py-12 text-white bg-degrade bg-parte-3">
       <h2 class="text-4xl font-extrabold mb-12 text-transparent bg-gradient-to-r from-[#D4FF00] via-[#0084ff] to-[#00ffd4] bg-clip-text animate-shine text-center">
         Mis desarrollos recientes
       </h2>

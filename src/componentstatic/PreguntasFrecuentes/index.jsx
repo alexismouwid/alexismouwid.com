@@ -29,10 +29,10 @@ const PreguntasFrecuentes = forwardRef((props, ref) => {
   return (
     <div
       ref={ref}
-      class="w-full max-w-7xl mx-auto px-4 py-16 grid grid-cols-1 lg:grid-cols-2 gap-12 bg-[linear-gradient(to_right,_#0f2027,_#8e2de2)]"
+      class="w-full max-w-7xl mx-auto px-4 py-16 grid grid-cols-1 lg:grid-cols-2 gap-12 bg-degrade-top"
     >
       <div class="flex flex-col items-center lg:items-start text-center lg:text-left ">
-        <h2 class="text-4xl font-extrabold text-[#D4FF00] mb-6 relative lg:left-140 lg:-top-20" >
+        <h2 class="text-4xl font-extrabold text-[#D4FF00] mb-6 relative lg:left-140 lg:-top-10" >
 
           Preguntas <br class="hidden sm:inline" /> frecuentes
         </h2>

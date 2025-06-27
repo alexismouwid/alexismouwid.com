@@ -10,6 +10,49 @@ themes: {
     font-family: 'Bebas Neue', sans-serif;
   }
 
+  .bg-degrade {
+    background: linear-gradient(
+      135deg,
+      #000000 0%,
+      #000428 30%,
+      #004e92 70%,
+      #00cfff 100%
+       );
+   background-size: 100% 300%; /* ¡clave! */
+    background-repeat: no-repeat;
+
+    
+    }
+ .bg-parte-1 {
+    background-position: top;
+  }
+  .bg-center{ 
+    background-position: center;
+  }
+ .bg-parte-3 {
+    background-position: bottom;
+  }
+.bg-degrade-top {
+      background: linear-gradient(
+        360deg,
+        #000000 0%,
+        #000428 30%,
+        #004e92 70%,
+        #00cfff 100%
+      );
+  }
+.bg-scroll {
+      background: linear-gradient(
+        135deg,
+        #000000 0%,
+        #000428 17%,
+        #004e92 40%,
+        #00cfff 100%
+      );
+      background-size: 100% 
+  }
+
+
 }
  
 

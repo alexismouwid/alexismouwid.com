@@ -20,7 +20,7 @@ const ContentSection = ()  => {
 
     <div id="content-principal" class="w-full h-[600vh] text-white flex justify-center items-centerl">
       <div id="content-container" class="
-bg-[linear-gradient(to_right,_#0f2027,_#8e2de2)]
+bg-scroll
         w-full h-[600vh] py-24  text-white" >
         <HeroSection  />
         <ProfileSection />
