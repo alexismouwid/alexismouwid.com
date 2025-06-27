@@ -38,7 +38,7 @@ const Preguntas = forwardRef((props, ref) => {
         <h2 id="preguntas-titulo" class="text-3xl font-extrabold text-[#D4FF00] mb-6 relative lg:left-140 lg:-top-16">
           Preguntas <br class="hidden sm:inline" /> frecuentes
         </h2>
-        <div id="preguntas-image" class="w-70 h-70 sm:w-80 sm:h-80 overflow-hidden rounded-xl shadow-lg">
+        <div id="preguntas-image" class="w-50 h-50 sm:w-80 sm:h-80 lg:w-70 lg:h-70 overflow-hidden rounded-xl shadow-lg">
           <img
             src="./diseño.jpg"
             alt="preguntas"
