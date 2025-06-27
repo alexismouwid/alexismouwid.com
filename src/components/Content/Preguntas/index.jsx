@@ -29,7 +29,7 @@ const Preguntas = forwardRef((props, ref) => {
     <div 
       ref={ref} 
       id="preguntas-contenedor"
-      class="fixed z-1 mx-auto relative bottom-650 
+      class="fixed z-1 mx-auto relative bottom-610 
              lg:bottom-510 lg:left-10
 
       w-full max-w-7xl mx-auto px-4 py-16 grid grid-cols-1 lg:grid-cols-2 gap-12 bg-[linear-gradient(to_right,_#0f2027,_#8e2de2)]"
