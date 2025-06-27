@@ -29,13 +29,13 @@ const Preguntas = forwardRef((props, ref) => {
     <div 
       ref={ref} 
       id="preguntas-contenedor"
-      class="fixed z-1 mx-auto relative bottom-590 
+      class="fixed z-1 mx-auto relative bottom-605 
              lg:bottom-510 lg:left-10
 
       w-full max-w-7xl mx-auto px-4 py-16 grid grid-cols-1 lg:grid-cols-2 gap-12 bg-[linear-gradient(to_right,_#0f2027,_#8e2de2)]"
     >
       <div id="preguntas-left" class="flex flex-col items-center lg:items-start text-center lg:text-left">
-        <h2 id="preguntas-titulo" class="text-4xl font-extrabold text-[#D4FF00] mb-6 relative lg:left-140 lg:-top-16">
+        <h2 id="preguntas-titulo" class="text-3xl font-extrabold text-[#D4FF00] mb-6 relative lg:left-140 lg:-top-16">
           Preguntas <br class="hidden sm:inline" /> frecuentes
         </h2>
         <div id="preguntas-image" class="w-70 h-70 sm:w-80 sm:h-80 overflow-hidden rounded-xl shadow-lg">
