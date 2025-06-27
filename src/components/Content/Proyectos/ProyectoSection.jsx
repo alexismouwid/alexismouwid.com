@@ -22,7 +22,7 @@ const Proyectos = forwardRef((props, ref) => {
         {/* Proyecto 1 */}
         <div id="proyecto-1" 
  class="fixed z-1 mx-auto relative bottom-390
-          lg:bottom-320 lg:left-10
+          lg:bottom-360 lg:left-10
            lg:w-[800px] lg:h-[500px]
 
           bg-gradient-to-br from-cyan-900 via-cyan-400 to-cyan-500 border border-cyan-900 rounded-3xl p-6 min-h-[250px] flex flex-col gap-4 hover:scale-105 hover:contrast-125 transition">
@@ -50,7 +50,7 @@ const Proyectos = forwardRef((props, ref) => {
           class="
 fixed z-1 mx-auto relative bottom-490
 
- lg:bottom-460 lg:left-10
+ lg:bottom-490 lg:left-10
  lg:w-[800px] lg:h-[500px]
           bg-gradient-to-br from-red-900 via-green-400 to-black-500 rounded-3xl p-6 min-h-[250px] flex flex-col gap-4 hover:scale-105 hover:contrast-125 transition">
           <img src="/ecomerce.jpg" alt="ecommerce" class="rounded-xl object-cover h-48 w-full lg:h-[350px]" />
@@ -71,7 +71,7 @@ fixed z-1 mx-auto relative bottom-490
           class="
 fixed z-1 mx-auto relative bottom-590
           
-lg:bottom-590 lg:left-10
+lg:bottom-620 lg:left-10
  lg:w-[800px] lg:h-[500px]
           bg-gradient-to-br from-cyan-900 via-cyan-400 to-cyan-500 border border-cyan-900 rounded-3xl p-6 min-h-[250px] flex flex-col gap-4 hover:scale-105 hover:contrast-125 transition
           bg-gradient-to-br from-white-100 via-red-400 to-red-900 border border-red-900 rounded-3xl p-6 min-h-[250px] flex flex-col gap-4 hover:scale-105 hover:contrast-125 transition">
@@ -92,7 +92,7 @@ lg:bottom-590 lg:left-10
           id="proyecto-4"
           class=" 
 fixed z-1 mx-auto relative bottom-680
-          lg:bottom-720 lg:left-10
+          lg:bottom-750 lg:left-10
            lg:w-[800px] lg:h-[500px]
           bg-gradient-to-br from-cyan-900 via-cyan-400 to-cyan-500 border border-cyan-900 rounded-3xl p-6 min-h-[250px] flex flex-col gap-4 hover:scale-105 hover:contrast-125 transition
           bg-gradient-to-br from-orange-400 via-orange-600 to-neutral-900

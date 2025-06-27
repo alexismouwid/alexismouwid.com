@@ -14,7 +14,7 @@ export default function useScrollTrigger() {
       { scale: 0.6, autoAlpha: 0 },
       { scale: 0.8, 
         autoAlpha: 1,
-        duration: 1,
+        duration: 0.5,
         ease: "power3.inOut" 
       }
 
@@ -142,14 +142,14 @@ export default function useScrollTrigger() {
       { scale: 1, autoAlpha: 1, duration: 2 }
     );
 
-    tl.to(".preguntas-contenedor", {
+    tl.to("#preguntas-contenedor", {
       scale: 2,
       autoAlpha: 0,
       duration: 3
     });
 
     // MODO DEV Controles de la animación
-    window.play.onclick = () => {
+   /* window.play.onclick = () => {
       tl.play();
       window.log.innerHTML += 'play <br>';
     };

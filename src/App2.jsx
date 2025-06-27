@@ -5,14 +5,13 @@ import { useIsMobile } from './utils/useIsMobile';
 import { useDynamicCss } from './utils/useDynamicCss';
 import { useN8nChat } from './utils/useN8nChat';
 import { useDelayedLoading } from './utils/useDelayedLoading';
-
-  
 import Header from './componentstatic/Header';
 import ContentSection from './componentstatic/ContentSection';
 import Servicios from './componentstatic/Servicios';
 import ProyectosRecientes from './componentstatic/ProyectosRecientes';
 import PreguntasFrecuentes from './componentstatic/PreguntasFrecuentes';
 import FloatingWhatsAppButton from './componentstatic/FloatingWhatsAppButton';
+import './styles/tailwind-component.output.css';
 
 export default function App2( {toggleApp} ) {
 
@@ -73,8 +72,35 @@ const scrollToHome = () => {
      <div id="n8n-chat" />
           <FloatingWhatsAppButton />
 
-          <button onClick={toggleApp} title="Ir a ModoScroll" className="changemodeButton">ModoScroll</button>
-        
+         <button onClick={toggleApp} class="
+
+          opacity-70
+          rounded-full
+          text-[0.9rem]
+          font-bebas
+          text-white
+          fixed
+          p-2
+          bottom-[9rem]
+          right-[0rem]
+          z-[1000]
+           lg:hover:scale-400
+           lg:hover:right-[40rem]
+           lg:hover:bottom-[15rem]
+            hover:bg-sky-500
+           hover:z-[1000]
+          hover:font-bold
+          hover:opacity-100
+          transition-all duration-2000 ease-in-out
+    group">
+           <img src="/changemode.png" alt="GitHub" width="60" height="38" class="group:rotate-360  rounded" />
+    <span class="
+    group-hover:text-sky-900 
+    group:text-[1rem]
+    group:rotate-45
+    ">Mode Scroll </span>    
+
+  </button>
 
       </div>
   

@@ -7,8 +7,8 @@ import { useDelayedLoading } from './utils/useDelayedLoading';
 import Header from './components/Header';
 import Content from './components/Content';
 import FloatingWhatsAppButton from './components/FloatingWhatsAppButton';
-import Play from './components/Play';
-import Pause from './components/Pause';
+import './styles/tailwind-component.output.css';
+
 import '@n8n/chat/style.css';
 
 
@@ -47,11 +47,37 @@ export default function App( {toggleApp} ) {
      />
  <Content />
           <div id="n8n-chat" />
-  <button onClick={toggleApp} className="changemodeButton">ModeStatic</button>
+  <button onClick={toggleApp} class="
+
+          opacity-70
+          rounded-full
+          text-[0.9rem]
+          font-bebas
+          text-white
+          fixed
+          p-2
+          bottom-[9rem]
+          right-[0rem]
+          z-[1000]
+          lg:hover:scale-400
+          lg:hover:right-[40rem]
+          lg:hover:bottom-[15rem]
+           hover:bg-sky-500
+           hover:z-[1000]
+          hover:font-bold
+          hover:opacity-100
+          transition-all duration-2000 ease-in-out
+    group">
+    <img src="/changemode.png" alt="GitHub" width="60" height="38" class="  rounded" />
+    <span class="
+    group-hover:text-sky-900 
+    group:text-[1rem]
+    group:rotate-45
+    ">Mode Static </span>    
+
+  </button>
           <FloatingWhatsAppButton />
-          <Pause /> 
-          <Play />
-        </div>
+                 </div>
       </div>
 
     </>
