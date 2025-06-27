@@ -52,6 +52,28 @@ themes: {
       background-size: 100% 
   }
 
+  .bg-scroll-mobile {
+      background: linear-gradient(
+        125deg,
+        #000000 0%,
+        #000428 14%,
+        #004e92 30%,
+        #00cfff 100%
+      );
+  }
+
+  .bg-static-mobile {
+      background: linear-gradient(
+        135deg,
+        #000000 0%,
+        #000428 14%,
+        #004e92 30%,
+        #00cfff 100%
+      );
+      background-size: 100% 300%;
+     background-repeat: no-repeat;
+  }
+
 
 }
  

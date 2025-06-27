@@ -739,9 +739,6 @@
   .mask-radial-at-center {
     --tw-mask-radial-position: center;
   }
-  .bg-scroll {
-    background-attachment: scroll;
-  }
   .bg-clip-text {
     background-clip: text;
   }
@@ -1487,6 +1484,11 @@
       align-items: flex-start;
     }
   }
+  .lg\:bg-scroll {
+    @media (width >= 64rem) {
+      background-attachment: scroll;
+    }
+  }
   .lg\:text-left {
     @media (width >= 64rem) {
       text-align: left;
@@ -1583,6 +1585,14 @@ themes: {
   .bg-scroll {
     background: linear-gradient( 135deg, #000000 0%, #000428 17%, #004e92 40%, #00cfff 100% );
     background-size: 100%;
+  }
+  .bg-scroll-mobile {
+    background: linear-gradient( 125deg, #000000 0%, #000428 14%, #004e92 30%, #00cfff 100% );
+  }
+  .bg-static-mobile {
+    background: linear-gradient( 135deg, #000000 0%, #000428 14%, #004e92 30%, #00cfff 100% );
+    background-size: 100% 300%;
+    background-repeat: no-repeat;
   }
 }
 @property --tw-rotate-x {
