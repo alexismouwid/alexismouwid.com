@@ -15,6 +15,8 @@ import '@n8n/chat/style.css';
 
 export default function App( {toggleApp} ) {
 
+const totalSteps = 18; // 9 secciones * (entrada + salida)
+  const visibleSteps = [1, 3, 5, 7, 9, 11, 13, 15, 17]; // pasos visibles
 
    const [menuOpen, setMenuOpen] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -77,7 +79,7 @@ export default function App( {toggleApp} ) {
   </button>
           <FloatingWhatsAppButton />
 
-      <ScrollProgress total={18} /> {/* 18 pasos: entrada + salida por sección */}
+      <ScrollProgress totalSteps={totalSteps} visibleSteps={visibleSteps} /> {/* 18 pasos: entrada + salida por sección */}
                  </div>
       </div>
 

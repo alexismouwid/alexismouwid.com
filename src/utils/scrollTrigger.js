@@ -30,7 +30,7 @@ export default function useScrollTrigger() {
         // markers: true
       }
     });
-
+      
     // Sección 1: Hero
     tl.fromTo("#hero-inner", { scale: 0.8, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: 1 })
       .to("#hero-inner", { scale: 2, autoAlpha: 0, duration: 1 });

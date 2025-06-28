@@ -1,29 +1,34 @@
 // ScrollProgress.jsx
 import React, { useEffect, useState } from "react";
-import "./ScrollProgress.css"; // Ver estilos abajo
+import "./ScrollProgress.css";
 
-const ScrollProgress = ({ total }) => {
-  const [currentStep, setCurrentStep] = useState(0);
+const ScrollProgress = ({ totalSteps, visibleSteps }) => {
+  const [currentVisible, setCurrentVisible] = useState(0);
 
   useEffect(() => {
     const update = () => {
       const scrollTop = window.scrollY;
       const docHeight = document.body.scrollHeight - window.innerHeight;
       const scrollProgress = scrollTop / docHeight;
-      const index = Math.round(scrollProgress * (total - 1));
-      setCurrentStep(index);
+      const currentStep = Math.round(scrollProgress * (totalSteps - 1));
+
+      // visible steps: 1, 3, 5, ..., 17 (es decir, impares)
+      const indexInVisible = visibleSteps.indexOf(currentStep);
+      if (indexInVisible !== -1) {
+        setCurrentVisible(indexInVisible);
+      }
     };
 
     window.addEventListener("scroll", update);
     return () => window.removeEventListener("scroll", update);
-  }, [total]);
+  }, [totalSteps, visibleSteps]);
 
   return (
     <div className="scroll-progress">
-      {Array.from({ length: total }).map((_, index) => (
+      {visibleSteps.map((_, index) => (
         <div
           key={index}
-          className={`dot ${index === currentStep ? "active" : ""}`}
+          className={`dot ${index === currentVisible ? "active" : ""}`}
         />
       ))}
     </div>
