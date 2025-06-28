@@ -8,6 +8,7 @@ import Header from './components/Header';
 import Content from './components/Content';
 import FloatingWhatsAppButton from './components/FloatingWhatsAppButton';
 import './styles/tailwind-component.output.css';
+import ScrollProgress from './components/ScrollProgress';
 
 import '@n8n/chat/style.css';
 
@@ -75,6 +76,8 @@ export default function App( {toggleApp} ) {
 
   </button>
           <FloatingWhatsAppButton />
+
+      <ScrollProgress total={18} /> {/* 18 pasos: entrada + salida por sección */}
                  </div>
       </div>
 

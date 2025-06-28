@@ -1,0 +1,27 @@
+/* ScrollProgress.css */
+.scroll-progress {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 100;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color: #ccc;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  opacity: 0.6;
+}
+
+.dot.active {
+  background-color: #00cfff;
+  transform: scale(1.4);
+  opacity: 1;
+}
+
