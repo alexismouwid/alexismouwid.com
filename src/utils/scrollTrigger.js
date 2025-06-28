@@ -7,8 +7,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function useScrollTrigger() {
   useGSAP(() => {
-
-    gsap.fromTo("#hero-inner",
+    gsap.fromTo(
+      "#hero-inner",
       { scale: 0.6, autoAlpha: 0 },
       { scale: 0.8, autoAlpha: 1, duration: 0.5, ease: "power3.inOut" }
     );
@@ -18,75 +18,54 @@ export default function useScrollTrigger() {
         trigger: "#content-container",
         start: "top top",
         end: "bottom bottom",
-        scrub: 1.5, // más fluido
+        scrub: 1,
         pin: true,
         pinSpacing: false,
         snap: {
-          snapTo: "labels",
+          snapTo: 1 / 18, // 10 secciones (9 saltos)
           duration: { min: 0.2, max: 1 },
           delay: 0.1,
           ease: "power1.inOut"
-        }
-        // markers: true, // Descomenta para debug visual
+        },
+        // markers: true
       }
     });
 
-    tl.addLabel("hero-start")
-      .from("#hero-inner", { scale: 0.8, autoAlpha: 1, duration: 0.01 })
+    // Sección 1: Hero
+    tl.fromTo("#hero-inner", { scale: 0.8, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: 1 })
+      .to("#hero-inner", { scale: 2, autoAlpha: 0, duration: 1 });
 
-      .addLabel("hero-visible")
-      .fromTo("#hero-inner", { scale: 0.8, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: 1 })
+    // Sección 2: Profile
+    tl.fromTo("#profile-inner", { scale: 0.4, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: 1 })
+      .to("#profile-inner", { scale: 2, autoAlpha: 0, duration: 1 });
 
-      .addLabel("hero-exit")
-      .to("#hero-inner", { scale: 2, autoAlpha: 0, duration: 2 })
+    // Sección 3: Skills
+    tl.fromTo("#skills-inner", { scale: 1.2, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: 1 })
+      .to("#skills-inner", { scale: 2, autoAlpha: 0, duration: 1 });
 
-      .addLabel("profile-entry")
-      .fromTo("#profile-inner", { scale: 0.4, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: 3 })
+    // Sección 4: Servicios
+    tl.fromTo("#serv-title", { scale: 1.2, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: 1 })
+      .to("#serv-title", { scale: 2, autoAlpha: 0, duration: 1 });
 
-      .addLabel("profile-exit")
-      .to("#profile-inner", { scale: 2, autoAlpha: 0, duration: 2 })
+    // Sección 5: Proyecto 1
+    tl.fromTo("#proyecto-1", { scale: 1.2, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: 1 })
+      .to("#proyecto-1", { scale: 2, autoAlpha: 0, duration: 1 });
 
-      .addLabel("skills-entry")
-      .fromTo("#skills-inner", { scale: 1.2, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: 4 })
+    // Sección 6: Proyecto 2
+    tl.fromTo("#proyecto-2", { scale: 1.2, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: 1 })
+      .to("#proyecto-2", { scale: 2, autoAlpha: 0, duration: 1 });
 
-      .addLabel("skills-exit")
-      .to("#skills-inner", { scale: 2, autoAlpha: 0, duration: 4 })
+    // Sección 7: Proyecto 3
+    tl.fromTo("#proyecto-3", { scale: 1.2, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: 1 })
+      .to("#proyecto-3", { scale: 2, autoAlpha: 0, duration: 1 });
 
-      .addLabel("serv-title-entry")
-      .fromTo("#serv-title", { scale: 1.2, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: 2 })
+    // Sección 8: Proyecto 4
+    tl.fromTo("#proyecto-4", { scale: 1.2, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: 1 })
+      .to("#proyecto-4", { scale: 2, autoAlpha: 0, duration: 1 });
 
-      .addLabel("serv-title-exit")
-      .to("#serv-title", { scale: 2, autoAlpha: 0, duration: 3 })
-
-      .addLabel("proyecto-1-entry")
-      .fromTo("#proyecto-1", { scale: 1.2, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: 2 })
-
-      .addLabel("proyecto-1-exit")
-      .to("#proyecto-1", { scale: 2, autoAlpha: 0, duration: 3 })
-
-      .addLabel("proyecto-2-entry")
-      .fromTo("#proyecto-2", { scale: 1.2, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: 2 })
-
-      .addLabel("proyecto-2-exit")
-      .to("#proyecto-2", { scale: 2, autoAlpha: 0, duration: 3 })
-
-      .addLabel("proyecto-3-entry")
-      .fromTo("#proyecto-3", { scale: 1.2, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: 2 })
-
-      .addLabel("proyecto-3-exit")
-      .to("#proyecto-3", { scale: 2, autoAlpha: 0, duration: 3 })
-
-      .addLabel("proyecto-4-entry")
-      .fromTo("#proyecto-4", { scale: 1.2, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: 2 })
-
-      .addLabel("proyecto-4-exit")
-      .to("#proyecto-4", { scale: 2, autoAlpha: 0, duration: 3 })
-
-      .addLabel("faq-entry")
-      .fromTo("#preguntas-contenedor", { scale: 1.2, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: 2 })
-
-      .addLabel("faq-exit")
-      .to("#preguntas-contenedor", { scale: 2, autoAlpha: 0, duration: 3 });
+    // Sección 9: Preguntas
+    tl.fromTo("#preguntas-contenedor", { scale: 1.2, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: 1 })
+      .to("#preguntas-contenedor", { scale: 2, autoAlpha: 0, duration: 1 });
   }, []);
 }
 
