@@ -9,8 +9,8 @@ export default function useScrollTrigger() {
   useGSAP(() => {
     gsap.fromTo(
       "#hero-inner",
-      { scale: 0.6, autoAlpha: 0 },
-      { scale: 0.8, autoAlpha: 1, duration: 0.5, ease: "power3.inOut" }
+      { scale: 1, autoAlpha: 0, left: 2000},
+      { scale: 1, autoAlpha: 1, left: 0, duration: 0.3  }
     );
 
     const tl = gsap.timeline({
@@ -31,13 +31,14 @@ export default function useScrollTrigger() {
       }
     });
       
+    tl.from("#hero-inner",{ scale: 1, autoAlpha: 1, duration: true });
     // Sección 1: Hero
-    tl.fromTo("#hero-inner", { scale: 0.8, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: 1 });
-      tl.to("#hero-inner", { scale: 1.5, autoAlpha: 0, duration: 1 });
+    tl.fromTo("#hero-inner", { scale: 1, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: 1  });
+      tl.to("#hero-inner", { scale: 1, autoAlpha: 0, duration: 1 });
 
     // Sección 2: Profile
     tl.fromTo("#profile-inner", { scale: 0.4, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: 1 });
-      tl.to("#profile-inner", { scale: 1.5, autoAlpha: 0, duration: 1 });
+    tl.to("#profile-inner", { scale: 1.5, autoAlpha: 0, duration: 1 });
 
     // Sección 3: Skills
     tl.fromTo("#skills-inner", { scale: 0.4, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: 1 });
@@ -49,7 +50,7 @@ export default function useScrollTrigger() {
 
     // Sección 5: Proyecto 1
     tl.fromTo("#proyecto-1", { scale: 0.4, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: 0.5 });
-      tl.to("#proyecto-1", { scale: 1.5, autoAlpha: 0, duration: 3 });
+      tl.to("#proyecto-1", { scale: 1.5, autoAlpha: 0, duration: 1 });
 
     // Sección 6: Proyecto 2
     tl.fromTo("#proyecto-2", { scale: 0.4, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: 0.5 })
@@ -65,7 +66,10 @@ export default function useScrollTrigger() {
 
     // Sección 9: Preguntas
     tl.fromTo("#preguntas-contenedor", { scale: 0.4, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: 1 })
-      tl.to("#preguntas-contenedor", { scale: 1.5, autoAlpha: 0, duration: 1 })
+      tl.to("#preguntas-contenedor", { scale: 1, autoAlpha: 0, duration: 0.1 })
+    
+    tl.fromTo("#preguntas-contenedor", { scale: 1, autoAlpha: 0, duration: 0.1 }, { scale: 1, autoAlpha: 1, duration: 0.1 })
+
   }, []);
 }
 
