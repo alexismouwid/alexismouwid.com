@@ -49,19 +49,19 @@ export default function useScrollTrigger() {
       tl.to("#serv-title", { scale: 1.5, autoAlpha: 0, duration: 1 });
 
     // Sección 5: Proyecto 1
-    tl.fromTo("#proyecto-1", { scale: 0.4, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: 0.5 });
+    tl.fromTo("#proyecto-1", { scale: 0.4, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: 1 });
       tl.to("#proyecto-1", { scale: 1.5, autoAlpha: 0, duration: 1 });
 
     // Sección 6: Proyecto 2
-    tl.fromTo("#proyecto-2", { scale: 0.4, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: 0.5 })
+    tl.fromTo("#proyecto-2", { scale: 0.4, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: 1 })
       tl.to("#proyecto-2", { scale: 1.5, autoAlpha: 0, duration: 1 })
 
     // Sección 7: Proyecto 3
-    tl.fromTo("#proyecto-3", { scale: 0.4, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: 0.5 })
+    tl.fromTo("#proyecto-3", { scale: 0.4, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: 1 })
       tl.to("#proyecto-3", { scale: 1.5, autoAlpha: 0, duration: 1 })
 
     // Sección 8: Proyecto 4
-    tl.fromTo("#proyecto-4", { scale: 0.4, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: 0.5 })
+    tl.fromTo("#proyecto-4", { scale: 0.4, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: 1 })
       tl.to("#proyecto-4", { scale: 1.5, autoAlpha: 0, duration: 1 })
 
     // Sección 9: Preguntas
