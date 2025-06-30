@@ -21,10 +21,14 @@ const Proyectos = forwardRef((props, ref) => {
       <div ref={ref} class="flex flex-col  gap-6 max-w-7xl mx-auto">
         {/* Proyecto 1 */}
         <div id="proyecto-1" 
- class="fixed z-1 mx-auto relative bottom-390
-          lg:bottom-360 lg:left-10
-           lg:w-[800px] lg:h-[500px]
+ class="
+          fixed z-1  
+          left-0 right-0 mx-auto
+          top-50 
+          max-h-screen 
 
+          lg:top-30 lg:w-[800px] lg:h-[500px]
+          md:top-80 md:w-[600px] md:h-[400px]
           bg-gradient-to-br from-cyan-900 via-cyan-400 to-cyan-500 border border-cyan-900 rounded-3xl p-6 min-h-[250px] flex flex-col gap-4 hover:scale-105 hover:contrast-125 transition">
 
           
@@ -48,10 +52,15 @@ const Proyectos = forwardRef((props, ref) => {
         <div 
           id="proyecto-2"
           class="
-fixed z-1 mx-auto relative bottom-490
+          fixed z-1 
+          left-0 right-0 mx-auto
+          top-50 se:overflow-y-auto
+          max-h-screen 
+ 
+          lg:top-30 lg:w-[800px] lg:h-[500px]
+          md:top-80 md:w-[600px] md:h-[400px]
 
- lg:bottom-490 lg:left-10
- lg:w-[800px] lg:h-[500px]
+
           bg-gradient-to-br from-red-900 via-green-400 to-black-500 rounded-3xl p-6 min-h-[250px] flex flex-col gap-4 hover:scale-105 hover:contrast-125 transition">
           <img src="/ecomerce.jpg" alt="ecommerce" class="rounded-xl object-cover h-48 w-full lg:h-[350px]" />
           <p>Tienda virtual con catálogo, carrito de compras, login/register y autenticación.</p>
@@ -69,10 +78,12 @@ fixed z-1 mx-auto relative bottom-490
         <div 
          id="proyecto-3"
           class="
-fixed z-1 mx-auto relative bottom-590
-          
-lg:bottom-620 lg:left-10
- lg:w-[800px] lg:h-[500px]
+          fixed z-1  
+          left-0 right-0 mx-auto  top-50 overflow-y-auto   max-h-screen 
+           
+          lg:top-30 md:top-80 md:w-[600px]
+          md:h-[400px] lg:w-[800px] lg:h-[500px] 
+
           bg-gradient-to-br from-cyan-900 via-cyan-400 to-cyan-500 border border-cyan-900 rounded-3xl p-6 min-h-[250px] flex flex-col gap-4 hover:scale-105 hover:contrast-125 transition
           bg-gradient-to-br from-white-100 via-red-400 to-red-900 border border-red-900 rounded-3xl p-6 min-h-[250px] flex flex-col gap-4 hover:scale-105 hover:contrast-125 transition">
           <img src="/avianca.jpg" alt="avianca" class="rounded-xl object-cover h-48 w-full lg:h-[350px]" />
@@ -91,10 +102,23 @@ lg:bottom-620 lg:left-10
         <div 
           id="proyecto-4"
           class=" 
-fixed z-1 mx-auto relative bottom-680
-          lg:bottom-750 lg:left-10
-           lg:w-[800px] lg:h-[500px]
-          bg-gradient-to-br from-cyan-900 via-cyan-400 to-cyan-500 border border-cyan-900 rounded-3xl p-6 min-h-[250px] flex flex-col gap-4 hover:scale-105 hover:contrast-125 transition
+          fixed  z-1 left-0 right-0 mx-auto overflow-y-auto max-h-screen 
+
+        
+          
+          top-50
+          lg:top-30 lg:w-[800px] lg:h-[500px]
+          md:top-80 md:w-[600px] md:h-[400px]
+               
+
+          bg-gradient-to-br from-cyan-900 via-cyan-400 to-cyan-500
+          border border-cyan-900 rounded-3xl 
+          p-6
+          min-h-[250px]
+          flex flex-col gap-4
+          hover:scale-105 
+          hover:contrast-125
+          transition
           bg-gradient-to-br from-orange-400 via-orange-600 to-neutral-900
 0 border border-green-900 rounded-3xl p-6 min-h-[250px] flex flex-col gap-4 hover:scale-105 hover:contrast-125 transition">
           <img src="/inventory.png" alt="inventory" class="rounded-xl object-cover h-48 w-full lg:h-[350px]" />

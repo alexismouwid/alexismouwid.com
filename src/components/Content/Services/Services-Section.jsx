@@ -6,7 +6,9 @@ const Servicios = ({ refServicios }) => {
     <div 
       id="serv-title"
       ref={refServicios}
-      class="fixed w-full flex flex-col items-center justify-center z-1 px-4 py-16 relative bottom-228 lg:bottom-180"
+      class="fixed w-full flex flex-col items-center justify-center z-1 px-4 py-16  left-0 right-0 mx-auto
+          top-10 bottom-0 max-h-screen 
+         lg:bottom-180"
     >
       <p 
         id="servicios-titulo"
@@ -23,7 +25,7 @@ const Servicios = ({ refServicios }) => {
           id="servicio-box"
           class="bg-gradient-to-br from-sky-900 via-sky-800 to-sky-700 border border-sky-700 p-6 rounded-2xl shadow-lg hover:scale-[1.02] transition hover:contrast-125"
         >
-          <h3 class="text-2xl font-semibold mb-8">Diseño de UI/UX de sitios web</h3>
+          <h3 class="text-1xl font-semibold mb-2">Diseño de UI/UX de sitios web</h3>
           <p class="text-[0.6rem] lg:text-[1rem] lg:text-sm text-balance leading-relaxed ">
             Diseño interfaces atractivas y experiencias de usuario intuitivas que
             combinan estética y funcionalidad. Creo sitios web fáciles de usar,
@@ -35,7 +37,7 @@ const Servicios = ({ refServicios }) => {
           id="servicio-box"
           class="bg-gradient-to-br from-sky-900 via-sky-800 to-sky-700 to-purple-700 border border-purple-700 p-6 rounded-2xl shadow-lg hover:scale-[1.02] transition hover:contrast-125"
         >
-          <h3 class="text-2xl font-semibold mb-4">Diseño de UI/UX de aplicaciones móviles</h3>
+          <h3 class="text-1xl font-semibold mb-2">Diseño de UI/UX de aplicaciones móviles</h3>
           <p class="text-[0.6rem]  lg:text-[1rem] lg:text-sm leading-relaxed">
             Diseño interfaces y experiencias de usuario para aplicaciones móviles,
             enfocadas en usabilidad, estética y rendimiento. Creo apps intuitivas,
@@ -47,7 +49,7 @@ const Servicios = ({ refServicios }) => {
           id="servicio-box"
           class="bg-gradient-to-br from-sky-900 via-sky-800 to-sky-700 to-emerald-700 border border-emerald-700 p-6 rounded-2xl shadow-lg hover:scale-[1.02] transition md:col-span-2 hover:contrast-125"
         >
-          <h3 class="text-2xl  font-semibold mb-4">Diseño de dashboards de control y software</h3>
+          <h3 class="text-1xl  font-semibold mb-2">Diseño de dashboards de control y software</h3>
           <p class="text-[0.6rem] lg:text-[1rem] text-sm leading-relaxed">
             Diseño dashboards y software personalizados con interfaces claras y
             funcionales. Ofrezco soluciones visuales que facilitan la gestión de

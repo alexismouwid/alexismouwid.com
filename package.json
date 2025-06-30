@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "build:tailwind": "pnpx @tailwindcss/cli -i ./src/styles/tailwind-component.css -o ./src/styles/tailwind-component.output.css --watch"
+    "build:tailwind": "pnpx @tailwindcss/cli -i ./src/styles/tailwind-component.css -o ./src/styles/tailwind-component.output.css --watch "
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",

@@ -14,9 +14,15 @@ const SkillsSection = () => (
       <h3 
         id="software-experience"
         className="text-[#D4FF00] text-center mb-8 md:mb-12
-          text-2xl sm:text-3xl md:text-4xl lg:text-5xl
-          relative top-0 sm:top-8 md:top-12 lg:-top-10
-          px-4"
+
+       
+          text-2xl sm:text-3xl md:text-4xl           relative top-0 sm:top-8 md:-top-10 lg:-top-10
+          px-4
+lg:text-5xl
+
+        "
+
+
       >
         Software Experience
       </h3>

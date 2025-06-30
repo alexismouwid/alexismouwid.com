@@ -1,18 +1,15 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{html,js,tsx}"],
   theme: {
     extend: {
-
-      fontFamily: {
-        bebas: ['Bebas Neue', 'sans-serif'],
-        anton: ['Anton', 'sans-serif'],
+      screens: {
+        'se': '375px',      // iPhone SE
+        'iphone': '390px',  // iPhone 12/13/14
+        'pixel': '412px',   // Pixel 7
+        'ipad-mini': '768px',
       },
     },
   },
-  plugins: [],
 };
-
