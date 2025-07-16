@@ -21,7 +21,7 @@ const ContentSection = ()  => {
     <div id="content-principal" class="w-full h-[600vh] text-white flex justify-center items-centerl">
       <div id="content-container" class="
         lg:bg-scroll bg-scroll-mobile
-        w-full h-[600vh] py-24  text-white" >
+        w-full h-[12000px] py-24  text-white" >
         <HeroSection  />
         <ProfileSection />
         <SkillsSection />

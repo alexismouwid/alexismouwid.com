@@ -7,18 +7,14 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function useScrollTrigger() {
   useGSAP(() => {
-    gsap.fromTo(
-      "#hero-inner",
-      { scale: 1, autoAlpha: 0, left: 2000},
-      { scale: 1, autoAlpha: 1, left: 0, duration: 0.3  }
-    );
+  
 
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: "#content-container",
         start: "top top",
-        end: "bottom bottom",
-        scrub: 0.5,
+        end: "+=12000",
+        scrub: 1,
         pin: true,
         pinSpacing: false,
         snap: {
@@ -31,44 +27,64 @@ export default function useScrollTrigger() {
       }
     });
       
-    tl.from("#hero-inner",{ scale: 1, autoAlpha: 1, duration: true });
+    tl.from("#hero-inner",{ scale: 1, autoAlpha: 1, duration: 10, ease: "power3.inOut" });
     // Sección 1: Hero
-    tl.fromTo("#hero-inner", { scale: 1, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: 1  });
-      tl.to("#hero-inner", { scale: 1, autoAlpha: 0, duration: 1 });
+    tl.fromTo("#hero-inner", { scale: 1, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: 8  });
+      tl.to("#hero-inner", { scale: 0.5, autoAlpha: 0, duration: 8 });
+ tl.to({}, { duration: 20 })
+
 
     // Sección 2: Profile
-    tl.fromTo("#profile-inner", { scale: 0.4, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: 1 });
-    tl.to("#profile-inner", { scale: 1.5, autoAlpha: 0, duration: 1 });
+    tl.fromTo("#profile-inner", { scale: 0.5, autoAlpha: 0, duration: 4 }, { scale: 1, autoAlpha: 1, duration: 4 });
+    tl.to("#profile-inner", { scale: 1, autoAlpha: 1, duration: 4 });
+    tl.from("#profile-inner",{ scale: 1, autoAlpha: 1, duration: 20, ease: "power3.inOut" });
+tl.to({}, { duration: 20 })
+
 
     // Sección 3: Skills
-    tl.fromTo("#skills-inner", { scale: 0.4, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: 1 });
-      tl.to("#skills-inner", { scale: 1.5, autoAlpha: 0, duration: 1 });
+    tl.fromTo("#skills-inner", { scale: 0.5, autoAlpha: 0, duration: 4 }, { scale: 1, autoAlpha: 1, duration: 4 });
+      tl.to("#skills-inner", { scale: 1, autoAlpha: 1, duration: 4 });
+    tl.from("#skills-inner",{ scale: 1, autoAlpha: 1, duration: 20, ease: "power3.inOut" });
+tl.to({}, { duration: 20 })
 
     // Sección 4: Servicios
-    tl.fromTo("#serv-title", { scale: 0.4, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: 1 });
-      tl.to("#serv-title", { scale: 1.5, autoAlpha: 0, duration: 1 });
+    tl.fromTo("#serv-title", { scale: 0.5, autoAlpha: 0, duration: 4 }, { scale: 1, autoAlpha: 1, duration: 4 });
+      tl.to("#serv-title", { scale: 1, autoAlpha: 1, duration: 4 });
+    tl.from("#serv-title",{ scale: 1, autoAlpha: 1, duration: 20, ease: "power3.inOut" });
+
+tl.to({}, { duration: 20 })
 
     // Sección 5: Proyecto 1
-    tl.fromTo("#proyecto-1", { scale: 0.4, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: 1 });
-      tl.to("#proyecto-1", { scale: 1.5, autoAlpha: 0, duration: 1 });
+    tl.fromTo("#proyecto-1", { scale: 0.5, autoAlpha: 0, duration: 4 }, { scale: 1, autoAlpha: 1, duration: 4 });
+      tl.to("#proyecto-1", { scale: 1, autoAlpha: 1, duration: 4 });
+    tl.from("#proyecto-1",{ scale: 1, autoAlpha: 1, duration: 20, ease: "power3.inOut" });
+tl.to({}, { duration: 20 })
 
     // Sección 6: Proyecto 2
-    tl.fromTo("#proyecto-2", { scale: 0.4, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: 1 })
-      tl.to("#proyecto-2", { scale: 1.5, autoAlpha: 0, duration: 1 })
+    tl.fromTo("#proyecto-2", { scale: 0.5, autoAlpha: 0, duration: 4 }, { scale: 1, autoAlpha: 1, duration: 4 })
+      tl.to("#proyecto-2", { scale: 1, autoAlpha: 1, duration: 4 })
+    tl.from("#proyecto-2",{ scale: 1, autoAlpha: 1, duration: 20, ease: "power3.inOut" });
+tl.to({}, { duration: 20 })
 
     // Sección 7: Proyecto 3
-    tl.fromTo("#proyecto-3", { scale: 0.4, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: 1 })
-      tl.to("#proyecto-3", { scale: 1.5, autoAlpha: 0, duration: 1 })
+    tl.fromTo("#proyecto-3", { scale: 0.5, autoAlpha: 0 , duration: 4}, { scale: 1, autoAlpha: 1, duration: 4 })
+      tl.to("#proyecto-3", { scale: 1, autoAlpha: 1, duration: 4 })
+    tl.from("#proyecto-3",{ scale: 1, autoAlpha: 1, duration: 20, ease: "power3.inOut" });
+
+tl.to({}, { duration: 20 })
 
     // Sección 8: Proyecto 4
-    tl.fromTo("#proyecto-4", { scale: 0.4, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: 1 })
-      tl.to("#proyecto-4", { scale: 1.5, autoAlpha: 0, duration: 1 })
+    tl.fromTo("#proyecto-4", { scale: 0.5, autoAlpha: 0 , duration: 4}, { scale: 1, autoAlpha: 1, duration: 4 })
+      tl.to("#proyecto-4", { scale: 1, autoAlpha: 1, duration: 4 })
+    tl.from("#proyecto-4",{ scale: 1, autoAlpha: 1, duration: 20, ease: "power3.inOut" });
+tl.to({}, { duration: 20 })
 
     // Sección 9: Preguntas
-    tl.fromTo("#preguntas-contenedor", { scale: 0.4, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: 1 })
-      tl.to("#preguntas-contenedor", { scale: 1, autoAlpha: 0, duration: 0.1 })
-    
+    tl.fromTo("#preguntas-contenedor", { scale: 0.5, autoAlpha: 0, duration: 4 }, { scale: 1, autoAlpha: 1, duration: 4 })
+      tl.to("#preguntas-contenedor", { scale: 1, autoAlpha: 1, duration: 4 })
     tl.fromTo("#preguntas-contenedor", { scale: 1, autoAlpha: 0, duration: 0.1 }, { scale: 1, autoAlpha: 1, duration: 0.1 })
+tl.to({}, { duration: 20 })
+  
 
   }, []);
 }
