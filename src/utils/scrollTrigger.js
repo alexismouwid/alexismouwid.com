@@ -23,7 +23,7 @@ export default function useScrollTrigger() {
           delay: 0.1,
           ease: "power3.inOut"
         },
-        markers: true
+        //markers: true
       }
     });
       
