@@ -23,7 +23,7 @@ const totalSteps = 18; // 9 secciones * (entrada + salida)
   const [modeStatic, setmodeStatic] = useState(false);
 
    //declared Utils
-  const loading = useDelayedLoading(1500);
+  const loading = useDelayedLoading(1000);
   const isMobile = useIsMobile();
     useDynamicCss('/styles/App.css', 'app-css');
     useN8nChat();

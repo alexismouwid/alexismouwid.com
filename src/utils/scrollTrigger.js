@@ -13,17 +13,17 @@ export default function useScrollTrigger() {
       scrollTrigger: {
         trigger: "#content-container",
         start: "top top",
-        end: "+=12000",
+        end: "+=7500",
         scrub: 1,
         pin: true,
         pinSpacing: false,
         snap: {
-          snapTo: 1 / 18, // 10 secciones (9 saltos)
+          snapTo: 1 / 10, // 10 secciones (9 saltos)
           duration:  9999,
           delay: 0.1,
           ease: "power3.inOut"
         },
-        // markers: true
+        markers: true
       }
     });
       
@@ -82,8 +82,7 @@ tl.to({}, { duration: 20 })
     // Sección 9: Preguntas
     tl.fromTo("#preguntas-contenedor", { scale: 0.5, autoAlpha: 0, duration: 4 }, { scale: 1, autoAlpha: 1, duration: 4 })
       tl.to("#preguntas-contenedor", { scale: 1, autoAlpha: 1, duration: 4 })
-    tl.fromTo("#preguntas-contenedor", { scale: 1, autoAlpha: 0, duration: 0.1 }, { scale: 1, autoAlpha: 1, duration: 0.1 })
-tl.to({}, { duration: 20 })
+     tl.from("#preguntas-contenedor",{ scale: 1, autoAlpha: 1, duration: 20, ease: "power3.inOut" });
   
 
   }, []);
