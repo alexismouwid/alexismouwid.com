@@ -12,9 +12,9 @@ const Servicios = ({ refServicios }) => {
     >
       <p 
         id="servicios-titulo"
-        class="text-[2.4rem] lg:text-[3rem] font-extrabold mb-12 text-center bg-gradient-to-r from-[#D4FF00] via-[#0084ff] to-[#00ffd4] bg-clip-text text-transparent mx-auto relative top-3"
+        class="text-[2.4rem] lg:text-[3rem] font-extrabold mb-12 text-center bg-gradient-to-r from-[#D4FF00] via-[#0084ff] to-[#00ffd4] bg-clip-text text-transparent mx-auto relative top-3 lg:relative lg:right-12"
       >
-        Ofrezco
+       Servicios 
       </p>
       
       <div 
@@ -23,10 +23,10 @@ const Servicios = ({ refServicios }) => {
       >
         <div 
           id="servicio-box"
-          class="bg-gradient-to-br from-sky-900 via-sky-800 to-sky-700 border border-sky-700 p-6 rounded-2xl shadow-lg hover:scale-[1.02] transition hover:contrast-125"
+          class="bg-gradient-to-br from-sky-900 via-gray-800 to-sky-700 border border-emerald-700  p-6 rounded-2xl shadow-lg hover:scale-[1.02] transition hover:contrast-125"
         >
-          <h3 class="text-1xl font-semibold mb-2">Diseño de UI/UX de sitios web</h3>
-          <p class="text-[0.6rem] lg:text-[1rem] lg:text-sm text-balance leading-relaxed ">
+          <h3 class="text-2xl font-semibold mb-2">Diseño de UI/UX de sitios web </h3>
+          <p class="text-[0.5rem] lg:text-[1rem] lg:text-sm text-balance leading-relaxed font-sans font-bold ">
             Diseño interfaces atractivas y experiencias de usuario intuitivas que
             combinan estética y funcionalidad. Creo sitios web fáciles de usar,
             visualmente efectivos y adaptados a tus objetivos.
@@ -35,10 +35,10 @@ const Servicios = ({ refServicios }) => {
         
         <div 
           id="servicio-box"
-          class="bg-gradient-to-br from-sky-900 via-sky-800 to-sky-700 to-purple-700 border border-purple-700 p-6 rounded-2xl shadow-lg hover:scale-[1.02] transition hover:contrast-125"
+          class="bg-gradient-to-br from-sky-900 via-gray-800 to-sky-700 to-purple-700 border border-emerald-700 p-6 rounded-2xl shadow-lg hover:scale-[1.02] transition hover:contrast-125"
         >
-          <h3 class="text-1xl font-semibold mb-2">Diseño de UI/UX de aplicaciones móviles</h3>
-          <p class="text-[0.6rem]  lg:text-[1rem] lg:text-sm leading-relaxed">
+          <h3 class="text-2xl font-semibold mb-2">Diseño de UI/UX de aplicaciones móviles</h3>
+          <p class="text-[0.6rem]  lg:text-[1rem] lg:text-sm leading-relaxed font-sans font-bold">
             Diseño interfaces y experiencias de usuario para aplicaciones móviles,
             enfocadas en usabilidad, estética y rendimiento. Creo apps intuitivas,
             modernas y adaptadas a las necesidades de tus usuarios.
@@ -47,10 +47,10 @@ const Servicios = ({ refServicios }) => {
         
         <div 
           id="servicio-box"
-          class="bg-gradient-to-br from-sky-900 via-sky-800 to-sky-700 to-emerald-700 border border-emerald-700 p-6 rounded-2xl shadow-lg hover:scale-[1.02] transition md:col-span-2 hover:contrast-125"
+          class="bg-gradient-to-br from-sky-900 via-gray-800 to-sky-700 to-emerald-700 border border-emerald-700 p-6 rounded-2xl shadow-lg hover:scale-[1.02] transition md:col-span-2 hover:contrast-125"
         >
-          <h3 class="text-1xl  font-semibold mb-2">Diseño de dashboards de control y software</h3>
-          <p class="text-[0.6rem] lg:text-[1rem] text-sm leading-relaxed">
+          <h3 class="text-2xl  font-semibold mb-2">Diseño de dashboards de control y software</h3>
+          <p class="text-[0.6rem] lg:text-[1rem] text-sm leading-relaxed font-sans font-bold">
             Diseño dashboards y software personalizados con interfaces claras y
             funcionales. Ofrezco soluciones visuales que facilitan la gestión de
             datos y mejoran la experiencia del usuario en plataformas digitales.
@@ -63,7 +63,7 @@ const Servicios = ({ refServicios }) => {
           href="https://api.whatsapp.com/send?phone=573043405723&text=Hola%2C+quiero+m%C3%A1s+informaci%C3%B3n"
           target="_blank"
           class="inline-block text-white px-6 py-3 bg-lime-300 rounded-lg hover:bg-lime-400 transition lg:relative
-          lg:bottom-15"
+          lg:bottom-15 font-bold font-sans"
         >
           Contáctame
         </a>

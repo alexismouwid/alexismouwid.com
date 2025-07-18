@@ -47,12 +47,25 @@ tl.to({}, { duration: 20 })
     tl.from("#skills-inner",{ scale: 1, autoAlpha: 1, duration: 20, ease: "power3.inOut" });
 tl.to({}, { duration: 20 })
 
+
+ tl.fromTo("#about-me", { scale: 0.5, autoAlpha: 0, duration: 4 }, { scale: 1, autoAlpha: 1, duration: 4 });
+      tl.to("#about-me", { scale: 1, autoAlpha: 1, duration: 4 });
+    tl.from("#about-me",{ scale: 1, autoAlpha: 1, duration: 20, ease: "power3.inOut" });
+tl.to({}, { duration: 20 })
+
+
     // Sección 4: Servicios
     tl.fromTo("#serv-title", { scale: 0.5, autoAlpha: 0, duration: 4 }, { scale: 1, autoAlpha: 1, duration: 4 });
       tl.to("#serv-title", { scale: 1, autoAlpha: 1, duration: 4 });
     tl.from("#serv-title",{ scale: 1, autoAlpha: 1, duration: 20, ease: "power3.inOut" });
 
 tl.to({}, { duration: 20 })
+  tl.fromTo("#proyectos-info", { scale: 0.5, autoAlpha: 0, duration: 4 }, { scale: 1, autoAlpha: 1, duration: 4 });
+      tl.to("#proyectos-info", { scale: 1, autoAlpha: 1, duration: 4 });
+    tl.from("#proyectos-info",{ scale: 1, autoAlpha: 1, duration: 20, ease: "power3.inOut" });
+
+tl.to({}, { duration: 20 })
+
 
     // Sección 5: Proyecto 1
     tl.fromTo("#proyecto-1", { scale: 0.5, autoAlpha: 0, duration: 4 }, { scale: 1, autoAlpha: 1, duration: 4 });

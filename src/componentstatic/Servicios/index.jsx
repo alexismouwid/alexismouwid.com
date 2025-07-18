@@ -3,7 +3,7 @@ import "../../styles/tailwind-component.output.css";
 
 const Servicios = forwardRef((_, ref) => {
   return (
-    <section ref={ref} className="w-full h-[150dvh] lg:h-screen px-4 py-16  bg-degrade bg-parte-3  text-white
+    <section ref={ref} className="w-full h-[150dvh] lg:h-screen   px-4 py-16  bg-degrade bg-parte-3  text-white
         " >
       <h2 className="text-4xl font-extrabold mb-12 text-center bg-gradient-to-r from-[#D4FF00] via-[#0084ff] to-[#00ffd4] bg-clip-text text-transparent animate-shine lg:relative lg:bottom-0 relative top-20 lg:relative lg:-top-20 ">
         Servicios que ofrezco
