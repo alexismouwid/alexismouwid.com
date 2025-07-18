@@ -29,7 +29,7 @@ const PreguntasFrecuentes = forwardRef((props, ref) => {
   return (
     <div
       ref={ref}
-      class="w-full max-w-7xl mx-auto px-4 py-16 grid grid-cols-1 lg:grid-cols-2 gap-12 bg-degrade-top"
+      class="w-full  mx-auto px-4 py-16 grid grid-cols-1 lg:grid-cols-2 gap-12 bg-gray-950"
     >
       <div class="flex flex-col items-center lg:items-start text-center lg:text-left ">
         <h2 class="text-4xl font-extrabold text-[#D4FF00] mb-6 relative lg:left-140 lg:-top-10" >
@@ -68,7 +68,7 @@ const PreguntasFrecuentes = forwardRef((props, ref) => {
               </span>
             </div>
             {activa === index && (
-              <div class="mt-2 lg:text-[1rem] text-white text-sm text-gray-300">
+              <div class="mt-2 lg:text-[1rem] font-sans text-white text-sm text-gray-300">
                 {item.respuesta}
               </div>
             )}

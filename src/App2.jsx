@@ -4,10 +4,11 @@ import { useState,  useEffect, useRef } from 'react';
 import { useIsMobile } from './utils/useIsMobile';
 import { useDynamicCss } from './utils/useDynamicCss';
 import { useN8nChat } from './utils/useN8nChat';
-import { useDelayedLoading } from './utils/useDelayedLoading';
 import Header from './componentstatic/Header';
 import ContentSection from './componentstatic/ContentSection';
+import AboutMe from './componentstatic/AboutMe';
 import Servicios from './componentstatic/Servicios';
+import ProyectosInformacion from './componentstatic/ProyectosInformacion';
 import ProyectosRecientes from './componentstatic/ProyectosRecientes';
 import PreguntasFrecuentes from './componentstatic/PreguntasFrecuentes';
 import FloatingWhatsAppButton from './componentstatic/FloatingWhatsAppButton';
@@ -24,7 +25,6 @@ export default function App2( {toggleApp} ) {
  
 
   //declared Utils
-  const loading = useDelayedLoading(1500);
   const isMobile = useIsMobile();
  useDynamicCss('/styles/App2.css', 'app2-css');
     useN8nChat();
@@ -48,11 +48,7 @@ const scrollToHome = () => {
   };
 
 
-  if(loading) {
-    return (
-<div className="loading-bar">Loading</div>
-   );
-  }  
+
   return (
     <>
 
@@ -66,7 +62,9 @@ const scrollToHome = () => {
       scrollToProyectos={scrollToProyectos}
       scrollToPreguntas={scrollToPreguntas}/>
       <ContentSection ref={homeRef}/>
+        <AboutMe ref={homeRef}/>
       <Servicios ref={serviciosRef}/>
+        <ProyectosInformacion ref={proyectosRef}/>
       <ProyectosRecientes ref={proyectosRef}/>
       <PreguntasFrecuentes ref={preguntasRef}/>
      <div id="n8n-chat" />

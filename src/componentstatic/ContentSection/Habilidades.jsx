@@ -5,12 +5,12 @@ const Habilidades = () => {
     <>
       {/* Sección 3: Habilidades */}
       <div class="w-full lg:w-[30%] flex flex-col gap-4 p-8 bg-transparent relative lg:-top-10 lg:left-30 bottom-20 "   >
-        <h3 class="text-[1.4rem] text-[#D4FF00] pb-2 relative -bottom-15">
+        <h3 class="text-[1.4rem] text-[#D4FF00] pb-2 relative -bottom-20">
           Software Experience
         </h3>
 
         {/* Aquí comienza el grid */}
-        <div id="grid-skills" class="grid grid-cols-2 gap-3 relative top-19">
+        <div id="grid-skills" class="grid grid-cols-2 gap-3 relative top-19 font-sans">
           {/* Item 1 */}
           <div class="flex flex-col gap-1 items-center hover:scale-110 transition-all duration-300 ease-in-out group">
             <span>Javascript</span>

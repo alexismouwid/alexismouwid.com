@@ -18,6 +18,7 @@
   gap: 1rem;
 }
 .navbar {
+  font-family: 'Poppins', sans-serif;
   animation: aparecer 1s ease-in-out;
 position: fixed;        /* Lo hace quedarse fijo */
   top: 0;                 /* Pegado al borde superior */
@@ -66,6 +67,7 @@ position: fixed;        /* Lo hace quedarse fijo */
 
 
 .li.desktop{
+  font-family: 'Poppins', sans-serif;
   display: flex;
   background-color: #000;
   color: #fff;
