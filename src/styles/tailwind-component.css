@@ -34,13 +34,14 @@ themes: {
   .bg-parte-3 {
     background-position: bottom;
   }
+
  
 .bg-degrade-top {
       background: linear-gradient(
         360deg,
         #000000 0%,
-        #000428 30%,
-        #004e92 70%,
+        #000428 10%,
+        #004e92 90%,
         #00cfff 100%
       );
   }

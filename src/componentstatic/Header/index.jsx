@@ -4,7 +4,7 @@ import "./header.css";
 import { useIsMobile}  from "../../utils/useIsMobile";
 import { useVisibilityObserver } from "../../utils/useVisibilityObserver";
 
-const Header = ({ menuOpen, setMenuOpen, scrollToHome, scrollToServicios, scrollToProyectos, scrollToPreguntas }) => {
+const Header = ({ menuOpen, setMenuOpen,  scrollToHome, scrollToSobreMi, scrollToServicios, scrollToProyectos, scrollToPreguntas }) => {
 
   useVisibilityObserver(".ejeL");
   useVisibilityObserver(".ejeX");
@@ -81,8 +81,11 @@ const Header = ({ menuOpen, setMenuOpen, scrollToHome, scrollToServicios, scroll
               </button>
             </div>
 
-            <li className="li-mobile">
-              <button onClick={() => handleScrollAndClose(scrollToHome)} className="btn1">Home</button>
+            <li classname="li-mobile">
+              <button onclick={() => handlescrollandclose(scrolltohome)} classname="btn1">home</button>
+            </li>
+<li classname="li-mobile">
+              <button onclick={() => handlescrollandclose(scrollToSobreMi)} classname="btn1">Sobre mi</button>
             </li>
             <li className="li-mobile">
               <button onClick={() => handleScrollAndClose(scrollToServicios)} className="btn2">Servicios</button>

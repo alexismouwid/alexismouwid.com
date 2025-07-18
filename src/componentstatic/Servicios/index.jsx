@@ -3,15 +3,17 @@ import "../../styles/tailwind-component.output.css";
 
 const Servicios = forwardRef((_, ref) => {
   return (
-    <section ref={ref} className="w-full h-screen px-4 py-16  bg-degrade bg-parte-3  text-white
+    <section ref={ref} className="w-full h-[150dvh] lg:h-screen px-4 py-16  bg-degrade bg-parte-3  text-white
         " >
-      <h2 className="text-4xl font-extrabold mb-12 text-center bg-gradient-to-r from-[#D4FF00] via-[#0084ff] to-[#00ffd4] bg-clip-text text-transparent animate-shine lg:relative lg:bottom-20">
+      <h2 className="text-4xl font-extrabold mb-12 text-center bg-gradient-to-r from-[#D4FF00] via-[#0084ff] to-[#00ffd4] bg-clip-text text-transparent animate-shine lg:relative lg:bottom-0 relative top-20 lg:relative lg:-top-20 ">
         Servicios que ofrezco
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto lg:relative lg:bottom-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto 
+        relative top-20 
+        lg:relative lg:-top-20">
         <div className="bg-gradient-to-br from-sky-900 via-gray-800 to-sky-700 border border-sky-700 p-6 rounded-2xl shadow-lg hover:scale-[1.02] transition hover:contrast-125" p>
-          <h3 className="text-2xl font-semibold mb-2">Diseño de UI/UX de sitios web</h3>
+          <h3 className="text-1xl font-semibold mb-2">Diseño de UI/UX de sitios web</h3>
           <p className="lg:text-xl leading-relaxed font-sans">
             Diseño interfaces atractivas y experiencias de usuario intuitivas que
             combinan estética y funcionalidad. Creo sitios web fáciles de usar,
@@ -20,7 +22,7 @@ const Servicios = forwardRef((_, ref) => {
         </div>
 
         <div className="bg-gradient-to-br from-sky-900 via-gray-800 to-sky-700 to-purple-700 border border-purple-700 p-6 rounded-2xl shadow-lg hover:scale-[1.02] transition hover:contrast-125">
-          <h3 className="text-2xl font-semibold mb-2">Diseño de UI/UX de aplicaciones móviles</h3>
+          <h3 className="text-1xl font-semibold mb-2">Diseño de UI/UX de aplicaciones móviles</h3>
           <p className="lg:text-xl leading-relaxed font-sans">
             Diseño interfaces y experiencias de usuario para aplicaciones móviles,
             enfocadas en usabilidad, estética y rendimiento. Creo apps intuitivas,
@@ -29,7 +31,7 @@ const Servicios = forwardRef((_, ref) => {
         </div>
 
         <div className="bg-gradient-to-br from-sky-900 via-gray-800 to-sky-700 to-emerald-700 border border-emerald-700 p-6 rounded-2xl shadow-lg hover:scale-[1.02] transition md:col-span-2 hover:contrast-125">
-          <h3 className="text-2xl font-semibold mb-2">Diseño de dashboards de control y software</h3>
+          <h3 className="text-1xl font-semibold mb-2">Diseño de dashboards de control y software</h3>
           <p className=" leading-relaxed font-sans lg:text-xl text-sm">
             Diseño dashboards y software personalizados con interfaces claras y
             funcionales. Ofrezco soluciones visuales que facilitan la gestión de
@@ -42,7 +44,9 @@ const Servicios = forwardRef((_, ref) => {
         <a
           href="https://api.whatsapp.com/send?phone=573043405723&text=Hola%2C+quiero+m%C3%A1s+informaci%C3%B3n"
           target="_blank"
-          className="inline-block font-sans font-extrabold text-white px-6 py-3 bg-lime-300 text-white rounded- hover:bg-lime-400 transition lg:relative lg:bottom-20"
+          className="inline-block font-sans font-extrabold text-white px-6 py-3 bg-lime-300 text-white rounded- hover:bg-lime-400 transition 
+          relative top-20
+        lg:relative lg:-top-20  " 
         >
           Contáctame
         </a>

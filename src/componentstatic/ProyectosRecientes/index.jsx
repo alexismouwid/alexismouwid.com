@@ -18,7 +18,7 @@ const ProyectosRecientes = forwardRef((props, ref) => {
 
   return (
     
-    <section class="w-full h-screen px-4 py-12 text-white bg-gray-950  ">
+    <section class="w-full  px-4 py-12 text-white bg-gray-950  ">
       
 
       <div ref={ref} class="font-sans font-bold grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto lg:relative lg:bottom-10">

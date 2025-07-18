@@ -4,7 +4,7 @@ const AboutMe = () => {
   return (
     <div className=" w-full h-screen mx-auto p-6 rounded-lg bg-degrade bg-parte-2 ">
      
-      <div className="w-full flex flex-col md:flex-row gap-6 items-center md:items-start mb-8 lg:relative lg:top-10">
+      <div className="w-full flex flex-col md:flex-row gap-6 items-center md:items-start mb-8 relative top-20 lg:relative lg:top-10">
        
         
         <div className="flex-1">
@@ -29,7 +29,7 @@ const AboutMe = () => {
       {/* Contenido principal */}
       <div className="space-y-6 text-gray-700 dark:text-gray-300 font-sans lg:relative lg:top-10">
         {/* Sección de enfoque */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 relative top-20 lg:relative lg:top-10">
           <div className=" p-4 rounded-lg">
             <h3 className="font-semibold text-lg mb-2">Mi Enfoque</h3>
             <ul className="space-y-2">
@@ -49,7 +49,7 @@ const AboutMe = () => {
           </div>
           
           {/* Sección de citas */}
-          <div className="space-y-4">
+          <div className="space-y-4 relative top-30 lg:relative lg:top-0">
             <div className="border-l-4 border-blue-500 pl-4 italic">
               <p className="font-medium">"Solo sé que no sé nada"</p>
               <p className="text-sm">- Sócrates</p>

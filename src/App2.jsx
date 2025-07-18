@@ -22,6 +22,7 @@ export default function App2( {toggleApp} ) {
   const proyectosRef = useRef(null);
   const preguntasRef = useRef(null);
   const homeRef = useRef(null);
+  const sobreMiRef = useRef(null);
  
 
   //declared Utils
@@ -33,6 +34,10 @@ export default function App2( {toggleApp} ) {
  
 const scrollToHome = () => {
     homeRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const scrollToSobreMi = () => {
+    sobreMiRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
   const scrollToServicios = () => {
@@ -58,11 +63,12 @@ const scrollToHome = () => {
       menuOpen={menuOpen}
       setMenuOpen={setMenuOpen}
       scrollToHome={scrollToHome}
+   scrollToSobreMi={scrollToSobreMi}
       scrollToServicios={scrollToServicios}
       scrollToProyectos={scrollToProyectos}
       scrollToPreguntas={scrollToPreguntas}/>
       <ContentSection ref={homeRef}/>
-        <AboutMe ref={homeRef}/>
+        <AboutMe ref={sobreMiRef}/>
       <Servicios ref={serviciosRef}/>
         <ProyectosInformacion ref={proyectosRef}/>
       <ProyectosRecientes ref={proyectosRef}/>
