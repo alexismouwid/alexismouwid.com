@@ -98,6 +98,14 @@ transition: 0.20s;
     font-weight: bold;
   }
 
+  .button4-desktop{
+    position: relative;
+    left: 10rem
+  }
+  .button-4-desktop:hover{
+    border-bottom: 1px solid #D4FF00;
+  }
+
 .button6-desktop{
   position: relative;
   left: 2rem;
@@ -122,6 +130,18 @@ transition: 0.20s;
 }
 
 .check{
+  margin-left: 5px;
+  color: black;
+  font-weight: bold;
+  font-size: 11px;
+  background-color: #D4FF00;
+;
+  padding: 3px 5px;
+  border-radius: 12px;
+}
+.check-f{
+  position: relative;
+  left: 9rem;
   margin-left: 5px;
   color: black;
   font-weight: bold;

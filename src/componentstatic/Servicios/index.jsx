@@ -5,14 +5,13 @@ const Servicios = forwardRef((_, ref) => {
   return (
     <section ref={ref} className="w-full h-[150dvh] lg:h-screen   px-4 py-16  bg-degrade bg-parte-3  text-white
         " >
-      <h2 className="text-4xl font-extrabold mb-12 text-center bg-gradient-to-r from-[#D4FF00] via-[#0084ff] to-[#00ffd4] bg-clip-text text-transparent animate-shine lg:relative lg:bottom-0 relative top-20 lg:relative lg:-top-20 ">
-        Servicios que ofrezco
-      </h2>
+      <h2 className="text-5xl font-extrabold mb-12 text-center bg-gradient-to-r from-[#D4FF00] via-[#0084ff] to-[#00ffd4] bg-clip-text text-transparent animate-shine lg:relative lg:bottom-0 relative top-20 lg:relative lg:-top-20 ">
+        Servicios       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto 
+      <div className="lg:w-[70%] lg:mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto 
         relative top-20 
         lg:relative lg:-top-20">
-        <div className="bg-gradient-to-br from-sky-900 via-gray-800 to-sky-700 border border-sky-700 p-6 rounded-2xl shadow-lg hover:scale-[1.02] transition hover:contrast-125" p>
+        <div className="bg-gradient-to-br from-sky-900 via-gray-800 to-sky-700 border border-emerald-700 p-6 rounded-2xl shadow-lg hover:scale-[1.02] transition hover:contrast-125" p>
           <h3 className="text-1xl font-semibold mb-2">Diseño de UI/UX de sitios web</h3>
           <p className="lg:text-xl leading-relaxed font-sans">
             Diseño interfaces atractivas y experiencias de usuario intuitivas que
@@ -21,7 +20,7 @@ const Servicios = forwardRef((_, ref) => {
           </p>
         </div>
 
-        <div className="bg-gradient-to-br from-sky-900 via-gray-800 to-sky-700 to-purple-700 border border-purple-700 p-6 rounded-2xl shadow-lg hover:scale-[1.02] transition hover:contrast-125">
+        <div className="bg-gradient-to-br from-sky-900 via-gray-800 to-sky-700 to-purple-700 border  border-emerald-700 p-6 rounded-2xl shadow-lg hover:scale-[1.02] transition hover:contrast-125">
           <h3 className="text-1xl font-semibold mb-2">Diseño de UI/UX de aplicaciones móviles</h3>
           <p className="lg:text-xl leading-relaxed font-sans">
             Diseño interfaces y experiencias de usuario para aplicaciones móviles,
