@@ -46,7 +46,7 @@ const Perfil = () => {
             </svg>
           </span>
           <p class="leading-tight font-bebas text-[1.6rem]">Alexis Vega</p>
-<p class="font-bebas text-center mt-4 text-2xl">
+<p class="font-sans text-center mt-4 text-1xl">
           Desarrollador web <span class=" text-[#D4FF00]">Junior</span>
         </p>
         </header>

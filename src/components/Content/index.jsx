@@ -4,7 +4,9 @@ import useScrollTrigger from "../../utils/scrollTrigger";
 import HeroSection from "./Home/Hero-Section";
 import ProfileSection from "./Home/Profile-Section";
 import SkillsSection from "./Home/Skills-Section";
+import AboutMe from "./AboutMe";
 import Servicios from "./Services/Services-Section";
+import ProyectosInformacion from "./ProyectosInformacion";
 import Proyectos from "./Proyectos/ProyectoSection";
 import Preguntas from "./Preguntas"
 import '../../styles/tailwind-component.output.css';
@@ -25,7 +27,9 @@ const ContentSection = ()  => {
         <HeroSection  />
         <ProfileSection />
         <SkillsSection />
+        <AboutMe />
         <Servicios  />
+        <ProyectosInformacion  />
         <Proyectos  />
         <Preguntas  />
              </div>

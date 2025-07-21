@@ -17,12 +17,11 @@ const ProyectosRecientes = forwardRef((props, ref) => {
   }, []);
 
   return (
-    <section class="w-full px-4 py-12 text-white bg-degrade  bg-parte-3">
-      <h2 class="text-4xl font-extrabold mb-12 text-transparent bg-gradient-to-r from-[#D4FF00] via-[#0084ff] to-[#00ffd4] bg-clip-text animate-shine text-center">
-        Mis desarrollos recientes
-      </h2>
+    
+    <section class="w-full  px-4 py-12 text-white bg-gray-950  ">
+      
 
-      <div ref={ref} class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
+      <div ref={ref} class="font-sans font-bold grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto lg:relative lg:bottom-10">
         {/* Proyecto 1 */}
         <div class="bg-gradient-to-br from-cyan-900 via-cyan-400 to-cyan-500 border border-cyan-900 rounded-3xl p-6 min-h-[250px] flex flex-col gap-4 hover:scale-105 hover:contrast-125 transition">
           <img src= "/paint.jpg" alt="paint" class="rounded-xl object-cover h-48 w-full" />
@@ -82,7 +81,7 @@ const ProyectosRecientes = forwardRef((props, ref) => {
       </div>
 
       <div class="mt-12 text-center">
-        <a href="https://api.whatsapp.com/send?phone=573043405723&text=Hola%2C+quiero+m%C3%A1s+informaci%C3%B3n" target="_blank" class="inline-block px-6 py-3 bg-lime-300 text-white rounded hover:bg-lime-400 transition ejeY">
+        <a href="https://api.whatsapp.com/send?phone=573043405723&text=Hola%2C+quiero+m%C3%A1s+informaci%C3%B3n" target="_blank" class="font-sans font-bold inline-block px-6 py-3 bg-lime-300 text-white rounded hover:bg-lime-400 transition ejeY">
           ¡Empecemos a discutir sobre tu desarrollo!
         </a>
       </div>

@@ -18,6 +18,7 @@
   gap: 1rem;
 }
 .navbar {
+  font-family: 'Poppins', sans-serif;
   animation: aparecer 1s ease-in-out;
 position: fixed;        /* Lo hace quedarse fijo */
   top: 0;                 /* Pegado al borde superior */
@@ -66,6 +67,7 @@ position: fixed;        /* Lo hace quedarse fijo */
 
 
 .li.desktop{
+  font-family: 'Poppins', sans-serif;
   display: flex;
   background-color: #000;
   color: #fff;
@@ -96,6 +98,14 @@ transition: 0.20s;
     font-weight: bold;
   }
 
+  .button4-desktop{
+    position: relative;
+    left: 10rem
+  }
+  .button-4-desktop:hover{
+    border-bottom: 1px solid #D4FF00;
+  }
+
 .button6-desktop{
   position: relative;
   left: 2rem;
@@ -120,6 +130,18 @@ transition: 0.20s;
 }
 
 .check{
+  margin-left: 5px;
+  color: black;
+  font-weight: bold;
+  font-size: 11px;
+  background-color: #D4FF00;
+;
+  padding: 3px 5px;
+  border-radius: 12px;
+}
+.check-f{
+  position: relative;
+  left: 9rem;
   margin-left: 5px;
   color: black;
   font-weight: bold;

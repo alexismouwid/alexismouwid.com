@@ -4,7 +4,7 @@ import "./header.css";
 import { useIsMobile}  from "../../utils/useIsMobile";
 import { useVisibilityObserver } from "../../utils/useVisibilityObserver";
 
-const Header = ({ menuOpen, setMenuOpen, scrollToHome, scrollToServicios, scrollToProyectos, scrollToPreguntas }) => {
+const Header = ({ menuOpen, setMenuOpen,  scrollToHome, scrollToSobreMi, scrollToServicios, scrollToProyectos, scrollToPreguntas }) => {
 
   useVisibilityObserver(".ejeL");
   useVisibilityObserver(".ejeX");
@@ -81,8 +81,8 @@ const Header = ({ menuOpen, setMenuOpen, scrollToHome, scrollToServicios, scroll
               </button>
             </div>
 
-            <li className="li-mobile">
-              <button onClick={() => handleScrollAndClose(scrollToHome)} className="btn1">Home</button>
+            <li classname="li-mobile">
+              <button onclick={() => handlescrollandclose(scrolltohome)} classname="btn1">home</button>
             </li>
             <li className="li-mobile">
               <button onClick={() => handleScrollAndClose(scrollToServicios)} className="btn2">Servicios</button>
@@ -106,6 +106,10 @@ const Header = ({ menuOpen, setMenuOpen, scrollToHome, scrollToServicios, scroll
             <li className="li-desktop ejeL">
               <button onClick={scrollToHome} className="button1-desktop">Home</button>
             </li>
+<li className="li-desktop ejeL">
+              <button onClick={scrollToSobreMi} className="button2-desktop">Sobre mi</button>
+            </li>
+
             <li className="li-desktop ejeL">
               <button onClick={scrollToServicios} className="button2-desktop">Servicios</button>
             </li>
@@ -117,8 +121,10 @@ const Header = ({ menuOpen, setMenuOpen, scrollToHome, scrollToServicios, scroll
             </li>
             <li className="li-desktop ejeL">
               <button onClick={scrollToPreguntas} className="button4-desktop">Preguntas</button>
-              <span className="check">Frecuentes</span>
+              <span className="check-f">Frecuentes</span>
             </li>
+ 
+
 
   <div className="header-contacto">
               <a 

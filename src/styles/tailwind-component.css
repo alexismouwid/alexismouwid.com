@@ -16,7 +16,7 @@ themes: {
     background: linear-gradient(
       135deg,
       #000000 0%,
-      #000428 30%,
+      #000428 40%,
       #004e92 70%,
       #00cfff 100%
        );
@@ -28,18 +28,20 @@ themes: {
  .bg-parte-1 {
     background-position: top;
   }
-  .bg-center{ 
+  .bg-parte-2{ 
     background-position: center;
   }
- .bg-parte-3 {
+  .bg-parte-3 {
     background-position: bottom;
   }
+
+ 
 .bg-degrade-top {
       background: linear-gradient(
         360deg,
         #000000 0%,
-        #000428 30%,
-        #004e92 70%,
+        #000428 10%,
+        #004e92 90%,
         #00cfff 100%
       );
   }
