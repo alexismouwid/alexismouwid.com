@@ -409,35 +409,11 @@
   .h-70 {
     height: calc(var(--spacing) * 70);
   }
-  .h-\[000px\] {
-    height: 000px;
-  }
-  .h-\[100dvh\] {
-    height: 100dvh;
-  }
-  .h-\[100vh\] {
-    height: 100vh;
-  }
   .h-\[600vh\] {
     height: 600vh;
   }
-  .h-\[3000px\] {
-    height: 3000px;
-  }
-  .h-\[4000px\] {
-    height: 4000px;
-  }
-  .h-\[4400px\] {
-    height: 4400px;
-  }
   .h-\[8000px\] {
     height: 8000px;
-  }
-  .h-\[9000px\] {
-    height: 9000px;
-  }
-  .h-\[12000px\] {
-    height: 12000px;
   }
   .h-dvh {
     height: 100dvh;
