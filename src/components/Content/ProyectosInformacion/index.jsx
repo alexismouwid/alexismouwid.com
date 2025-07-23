@@ -15,62 +15,24 @@ const ProyectosInformacion = forwardRef((props, ref) => {
 
   return (
     
-    <section id="proyectos-info"  className="fixed w-full h-screen px-4 mx-auto h-screen py-12  flex flex-col gap-2 items-center  align-center z-1  justify-center text-center
-
-      
-
-
-    
-     relative
-       se:bottom-340 
-       xr:bottom-460 
-       12p:bottom-437
- 12pm:bottom-475   
-
-                
-             p7:bottom-470        
-            gs8:bottom-380
-            im:bottom-780      
-      ia:bottom-885
-      ip:bottom-1050
-             sp7:bottom-1030         
-      sd:bottom-350
-      gzf:bottom-970
-      gzf5:bottom-450
-      nh:bottom-460
-      nhm:bottom-610
-      lg:bottom-460 
-     laptop:bottom-500
-      2xl:bottom-590
-      4k:bottom-820
-
-
-
-
-
-
-
-
-
-
-
-
-  
+    <section id="proyectos-info"  className="fixed top-0 left-0  w-full h-screen items-center 
+    flex flex-col justify-center pointer-events-none align-center
+ 
       ">
       <h1 class="text-balance  mx-auto
 
-            se:text-xl
+            se:text-sm
             xr:text-4xl
             12p:text-3xl
 
             
             12pm:text-1xl
-            p7:text-1xl
+           p7:text-1xl
             gs8:text-1xl
 
             im:text-4xl
 
-            sp7:text-1xl
+            sp7:text-3xl
 
              lg:text-7xl 
         4k:text-7xl
@@ -93,10 +55,11 @@ const ProyectosInformacion = forwardRef((props, ref) => {
             p7:text-1xl
             gs8:text-1xl
             im:text-4xl
-            sp7:text-1xl
         nh:text-3xl
         nhm:text-4xl
         4k:text-5xl
+
+        sp7:text-2xl
       
       
 
@@ -110,6 +73,7 @@ const ProyectosInformacion = forwardRef((props, ref) => {
         md:text-gray-100 md:text-5xl md:mx-auto md:text-balance
         lg:text-gray-100   lg:text-2xl lg:w-[80%]
         xl:text-gray-100 xl:text-4xl xl:w-[70%]
+        sp7:text-5xl
 
 
         ">Presento proyectos que combinan diseño intuitivo y funcionalidades sólidas.

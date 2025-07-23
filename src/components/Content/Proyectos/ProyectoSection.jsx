@@ -15,23 +15,30 @@ const Proyectos = forwardRef((props, ref) => {
   }, []);
 
   return (
-    <section  class=" w-full px-4 py-12 text-white bg-[linear-gradient(to_right,_#0f2027,_#8e2de2)] z-1 h-dvh mx-auto">
+    <section  class=" w-full px-4 py-12 text-white h-dvh mx-auto">
     
 
       <div ref={ref} class="flex flex-col  gap-6 max-w-7xl mx-auto">
         {/* Proyecto 1 */}
         <div id="proyecto-1" 
  class="
-          fixed z-1  
-          left-0 right-0 mx-auto
-          top-50 
-          max-h-screen 
-          md:top-80 md:w-[600px] md:h-[400px]
-          lg:top-15 lg:w-[600px] lg:h-[500px]
-          nhm:top-50 lg:w-[800px] lg:h-[500px]
-          laptop:top-20  
-          2xl:top-35
-          4k:top-80 4k:w-[900px] 4k:h-[600px] 4k:text-3xl
+          fixed top-0 left-0  w-full h-screen items-center 
+    flex flex-col justify-center pointer-events-none align-center
+          se:w-[500px] se:h-[400px] se:top-50
+          xr:top-60
+          12p:top-70
+          12pm:top-70
+          gs8:top-50 gs8:w-[500px] gs8:h-[400px]
+          im:left-30
+          ia:top-90 ia:w-[550px] ia:h-[380px]
+          
+          ip:left-35 ip:top-110 ip:w-[700px] ip:h-[450px]
+          sp7:top-110 sp7:w-[700px] sp7:h-[450px]
+          lg:top-30
+          laptop:top-30 laptop:left-70
+          nhm:left-70 nhm:top-50 
+          2xl:left-100
+          4k:left-120 4k:top-80 4k:w-[900px] 4k:h-[600px] 
 
 
           bg-gradient-to-br from-cyan-900 via-cyan-400 to-cyan-500 border border-cyan-900 rounded-3xl p-6 min-h-[250px] flex flex-col gap-4 hover:scale-105 hover:contrast-125 transition">
@@ -58,16 +65,24 @@ const Proyectos = forwardRef((props, ref) => {
           id="proyecto-2"
           class="
           fixed z-1 
-          left-0 right-0 mx-auto
-          top-50 se:overflow-y-auto
-          max-h-screen 
+          fixed top-0 left-0  w-full h-screen items-center 
+    flex flex-col justify-center pointer-events-none align-center
+          se:w-[500px] se:h-[400px] se:top-50
+          xr:top-60
+          12p:top-70
+          12pm:top-70
+          gs8:top-50 gs8:w-[500px] gs8:h-[400px]
+          im:left-30
+          ia:top-90 ia:w-[550px] ia:h-[380px]
+          
+          ip:left-35 ip:top-110 ip:w-[700px] ip:h-[450px]
+          sp7:top-110 sp7:w-[700px] sp7:h-[450px]
+          lg:top-30
+          laptop:top-30 laptop:left-70
+          nhm:left-70 nhm:top-50 
+          2xl:left-100
+          4k:left-120 4k:top-80 4k:w-[900px] 4k:h-[600px] 
 
-          md:top-80 md:w-[600px] md:h-[400px]
-          lg:top-18 lg:w-[600px] lg:h-[500px]
-          nhm:top-50 lg:w-[800px] lg:h-[500px]
-          laptop:top-20  
-        2xl:top-35
-          4k:top-80 4k:w-[900px] 4k:h-[600px] 4k:text-3xl
 
 
 
@@ -88,15 +103,24 @@ const Proyectos = forwardRef((props, ref) => {
         <div 
          id="proyecto-3"
           class="
-          fixed z-1  
-          left-0 right-0 mx-auto  top-50 overflow-y-auto   max-h-screen 
-             
-          md:top-80 md:w-[600px]   md:h-[400px]
-          lg:top-18 lg:w-[600px] lg:h-[500px] 
-          nhm:top-50 lg:w-[800px] lg:h-[500px]
-          laptop:top-20
-2xl:top-35
- 4k:top-80 4k:w-[900px] 4k:h-[600px] 4k:text-3xl
+         fixed z-1 
+          fixed top-0 left-0  w-full h-screen items-center 
+    flex flex-col justify-center pointer-events-none align-center
+          se:w-[500px] se:h-[400px] se:top-50
+          xr:top-60
+          12p:top-70
+          12pm:top-70
+          gs8:top-50 gs8:w-[500px] gs8:h-[400px]
+          im:left-30
+          ia:top-90 ia:w-[550px] ia:h-[380px]
+          
+          ip:left-35 ip:top-110 ip:w-[700px] ip:h-[450px]
+          sp7:top-110 sp7:w-[700px] sp7:h-[450px]
+          lg:top-30
+          laptop:top-30 laptop:left-70
+          nhm:left-70 nhm:top-50 
+          2xl:left-100
+          4k:left-120 4k:top-80 4k:w-[900px] 4k:h-[600px] 
 
 
 
@@ -119,17 +143,25 @@ const Proyectos = forwardRef((props, ref) => {
         <div 
           id="proyecto-4"
           class=" 
-          fixed  z-1 left-0 right-0 mx-auto overflow-y-auto max-h-screen 
-
-        
+           fixed z-1 
+          fixed top-0 left-0  w-full h-screen items-center 
+    flex flex-col justify-center pointer-events-none align-center
+          se:w-[500px] se:h-[400px] se:top-50
+          xr:top-60
+          12p:top-70
+          12pm:top-70
+          gs8:top-50 gs8:w-[500px] gs8:h-[400px]
+          im:left-30
+          ia:top-90 ia:w-[550px] ia:h-[380px]
           
-          top-50
-          lg:top-18 lg:w-[600px] lg:h-[500px]
-          nhm:top-50 lg:w-[800px] lg:h-[500px]
-          md:top-80 md:w-[600px] md:h-[400px]
-          laptop:top-20
-2xl:top-35
- 4k:top-80 4k:w-[900px] 4k:h-[600px] 4k:text-3xl
+          ip:left-35 ip:top-110 ip:w-[700px] ip:h-[450px]
+          sp7:top-110 sp7:w-[700px] sp7:h-[450px]
+          lg:top-30
+          laptop:top-30 laptop:left-70
+          nhm:left-70 nhm:top-50 
+          2xl:left-100
+          4k:left-120 4k:top-80 4k:w-[900px] 4k:h-[600px] 
+
 
                
 
@@ -158,10 +190,7 @@ const Proyectos = forwardRef((props, ref) => {
       </div>
 
       <div class="mt-12 text-center">
-        <a href="https://api.whatsapp.com/send?phone=573043405723&text=Hola%2C+quiero+m%C3%A1s+informaci%C3%B3n" target="_blank" class="inline-block px-6 py-3 bg-lime-300 text-white rounded hover:bg-lime-400 transition ejeY">
-          ¡Empecemos a discutir sobre tu desarrollo!
-        </a>
-      </div>
+             </div>
     </section>
   );
 });

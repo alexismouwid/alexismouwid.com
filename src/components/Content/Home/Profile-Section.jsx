@@ -4,26 +4,12 @@ import sprite from './sprite.svg';
 import '../../../tailwind.css';
 
 const ProfileSection = () => (
-  <div id="profile-section" class="fixed relative top-2 w-full h-dvh
-    flex flex-col justify-center pointer-events-none align-center z-1 mx-auto
-
-    im:-top-240  
-    ia:-top-300 
-    ip:-top-340  
-    sp7:-top-350 
-    lg:-top-180
-    nhm:-top-200
-    laptop:-top-160
-    xl:-top-180
-    2xl:-top-190
-    4k:-top-260
-    ultrawide:-top-210
-    
-   
+  <div id="profile-section" class="fixed top-0 left-0  w-full h-screen items-center 
+    flex flex-col justify-center pointer-events-none align-center      
 
     ">
 
-    <div id="profile-inner" class="relative right-2 z-1 pointer-events-auto" > 
+    <div id="profile-inner" class="relative top-30 left-0 right-2 z-1 pointer-events-auto" > 
 
       <div id="profile-image" class="relative mx-auto bottom-20">
   <img 
