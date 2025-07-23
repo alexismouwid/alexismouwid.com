@@ -1,4 +1,5 @@
 import React, { forwardRef } from "react";
+import "../../tailwind.css";
 
 const AboutMe = forwardRef((props, ref) => {
   return (

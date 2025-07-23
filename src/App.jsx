@@ -7,7 +7,7 @@ import { useDelayedLoading } from './utils/useDelayedLoading';
 import Header from './components/Header';
 import Content from './components/Content';
 import FloatingWhatsAppButton from './components/FloatingWhatsAppButton';
-import './styles/tailwind-component.output.css';
+import '/src/tailwind.css';
 import ScrollProgress from './components/ScrollProgress';
 
 import '@n8n/chat/style.css';

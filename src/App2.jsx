@@ -12,7 +12,7 @@ import ProyectosInformacion from './componentstatic/ProyectosInformacion';
 import ProyectosRecientes from './componentstatic/ProyectosRecientes';
 import PreguntasFrecuentes from './componentstatic/PreguntasFrecuentes';
 import FloatingWhatsAppButton from './componentstatic/FloatingWhatsAppButton';
-import './styles/tailwind-component.output.css';
+import '/src/tailwind.css';
 
 export default function App2( {toggleApp} ) {
 

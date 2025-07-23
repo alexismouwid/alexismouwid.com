@@ -1,5 +1,5 @@
 import React, { useState, forwardRef } from "react";
-import "../../styles/tailwind-component.output.css";
+import "../../tailwind.css";
 
 const preguntas = [
   {

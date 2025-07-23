@@ -1,5 +1,5 @@
 import React, { useEffect, useState, forwardRef } from "react";
-import '../../../styles/tailwind-component.output.css';
+import '../../../tailwind.css';
 
 const Proyectos = forwardRef((props, ref) => {
 
@@ -26,9 +26,14 @@ const Proyectos = forwardRef((props, ref) => {
           left-0 right-0 mx-auto
           top-50 
           max-h-screen 
-
-          lg:top-30 lg:w-[800px] lg:h-[500px]
           md:top-80 md:w-[600px] md:h-[400px]
+          lg:top-15 lg:w-[600px] lg:h-[500px]
+          nhm:top-50 lg:w-[800px] lg:h-[500px]
+          laptop:top-20  
+          2xl:top-35
+          4k:top-80 4k:w-[900px] 4k:h-[600px] 4k:text-3xl
+
+
           bg-gradient-to-br from-cyan-900 via-cyan-400 to-cyan-500 border border-cyan-900 rounded-3xl p-6 min-h-[250px] flex flex-col gap-4 hover:scale-105 hover:contrast-125 transition">
 
           
@@ -56,9 +61,14 @@ const Proyectos = forwardRef((props, ref) => {
           left-0 right-0 mx-auto
           top-50 se:overflow-y-auto
           max-h-screen 
- 
-          lg:top-30 lg:w-[800px] lg:h-[500px]
+
           md:top-80 md:w-[600px] md:h-[400px]
+          lg:top-18 lg:w-[600px] lg:h-[500px]
+          nhm:top-50 lg:w-[800px] lg:h-[500px]
+          laptop:top-20  
+        2xl:top-35
+          4k:top-80 4k:w-[900px] 4k:h-[600px] 4k:text-3xl
+
 
 
           bg-gradient-to-br from-red-900 via-green-400 to-black-500 rounded-3xl p-6 min-h-[250px] flex flex-col gap-4 hover:scale-105 hover:contrast-125 transition">
@@ -80,10 +90,17 @@ const Proyectos = forwardRef((props, ref) => {
           class="
           fixed z-1  
           left-0 right-0 mx-auto  top-50 overflow-y-auto   max-h-screen 
-           
-          lg:top-30 md:top-80 md:w-[600px]
-          md:h-[400px] lg:w-[800px] lg:h-[500px] 
+             
+          md:top-80 md:w-[600px]   md:h-[400px]
+          lg:top-18 lg:w-[600px] lg:h-[500px] 
+          nhm:top-50 lg:w-[800px] lg:h-[500px]
+          laptop:top-20
+2xl:top-35
+ 4k:top-80 4k:w-[900px] 4k:h-[600px] 4k:text-3xl
 
+
+
+        
           bg-gradient-to-br from-cyan-900 via-cyan-400 to-cyan-500 border border-cyan-900 rounded-3xl p-6 min-h-[250px] flex flex-col gap-4 hover:scale-105 hover:contrast-125 transition
           bg-gradient-to-br from-white-100 via-red-400 to-red-900 border border-red-900 rounded-3xl p-6 min-h-[250px] flex flex-col gap-4 hover:scale-105 hover:contrast-125 transition">
           <img src="/avianca.jpg" alt="avianca" class="rounded-xl object-cover h-48 w-full lg:h-[350px]" />
@@ -107,9 +124,15 @@ const Proyectos = forwardRef((props, ref) => {
         
           
           top-50
-          lg:top-30 lg:w-[800px] lg:h-[500px]
+          lg:top-18 lg:w-[600px] lg:h-[500px]
+          nhm:top-50 lg:w-[800px] lg:h-[500px]
           md:top-80 md:w-[600px] md:h-[400px]
+          laptop:top-20
+2xl:top-35
+ 4k:top-80 4k:w-[900px] 4k:h-[600px] 4k:text-3xl
+
                
+
 
           bg-gradient-to-br from-cyan-900 via-cyan-400 to-cyan-500
           border border-cyan-900 rounded-3xl 
@@ -123,7 +146,7 @@ const Proyectos = forwardRef((props, ref) => {
 0 border border-green-900 rounded-3xl p-6 min-h-[250px] flex flex-col gap-4 hover:scale-105 hover:contrast-125 transition">
           <img src="/inventory.png" alt="inventory" class="rounded-xl object-cover h-48 w-full lg:h-[350px]" />
           <p>Aplicación de gestión de inventario con login, autenticación y encriptación de usuarios.</p>
-          <div class="flex justify-between items-center mt-auto">
+          <div class="flex justify-between items-center mt-auto ">
             <a href="https://inventory-management-taupe-one.vercel.app/" target="_blank" rel="noopener noreferrer">
               <img src="https://vercel.com/button" alt="Deploy with Vercel" />
             </a>

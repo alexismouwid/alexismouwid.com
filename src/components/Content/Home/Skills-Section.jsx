@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../styles/tailwind-component.output.css';
+import '../../../tailwind.css';
 
 const SkillsSection = () => (
   <div 
@@ -13,13 +13,23 @@ const SkillsSection = () => (
       {/* Título */}
       <h3 
         id="software-experience"
-        className="text-[#D4FF00] text-center mb-8 md:mb-12
+        className="text-[#D4FF00]
+        text-center mb-8 md:mb-12
 
        
-          text-2xl sm:text-3xl md:text-4xl           relative top-0 sm:top-8 md:-top-10 lg:-top-10
-          px-4
-lg:text-5xl
+          text-2xl sm:text-3xl md:text-4xl           relative top-0
+      
 
+        se:relative se:top-10
+        xr:relative xr:top-10 xr:text-3xl
+        p7:text-3xl
+        gs8:relative gs8:top-10 gs8:text-3xl
+        
+       
+
+        sm:top-8 md:-top-10 px-4
+        lg:text-5xl lg:relative: lg:bottom-10
+         4k:text-7xl
         "
 
 
@@ -33,8 +43,13 @@ lg:text-5xl
         className="grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6
           gap-1 sm:gap-4 md:gap-4
           w-full max-w-5xl mx-auto
+
+        se:relative se:top-10
+        gs8:relative gs8:top-10 gs8:text-3xl
+      
+
           relative top-0 sm:-top-8 md:-top-12 lg:-top-0
-          px-2 sm:px-4"
+          px-2 sm:px-4 "
       >
         {[
           { name: 'Javascript', src: 'https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg' },
@@ -60,7 +75,7 @@ lg:text-5xl
             <img 
               src={src} 
               alt={name}
-              className={`w-8 h-8 xs:w-10 xs:h-10 sm:w-12 sm:h-12 md:w-14 md:h-14
+              className={`w-8 h-8 xs:w-10 xs:h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 4k:w-20 4:h-20 4k:text-2xl
                 group-hover:scale-110 transition-all duration-300 ease-in-out
                 ${name === 'Javascript' || name === 'HTML5' || name === 'CSS' || name === 'React' || name === 'Node.js' || name === 'Figma' ? 'group-hover:rotate-25' : ''}
                 ${name === 'MongoDB' || name === 'Github' || name === 'Docker' ? 'group-hover:-rotate-25' : ''}

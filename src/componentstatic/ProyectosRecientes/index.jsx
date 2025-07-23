@@ -1,5 +1,5 @@
 import React, { useEffect, useState, forwardRef } from "react";
-import '../../styles/tailwind-component.output.css';
+import '../../tailwind.css';
 import { useVisibilityObserver } from "../../utils/useVisibilityObserver";
 
 const ProyectosRecientes = forwardRef((props, ref) => {

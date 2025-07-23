@@ -1,5 +1,5 @@
 import React, { forwardRef, useRef , useEffect} from 'react';
-import '../../styles/tailwind-component.output.css';
+import '../../tailwind.css';
 import { useVisibilityObserver } from '../../utils/useVisibilityObserver';
 import Contacto from './Contacto.jsx';
 import Perfil from './Perfil.jsx';

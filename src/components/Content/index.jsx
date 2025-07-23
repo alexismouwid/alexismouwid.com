@@ -5,12 +5,11 @@ import HeroSection from "./Home/Hero-Section";
 import ProfileSection from "./Home/Profile-Section";
 import SkillsSection from "./Home/Skills-Section";
 import AboutMe from "./AboutMe";
-import Servicios from "./Services/Services-Section";
+import Servicios from "./Services";
 import ProyectosInformacion from "./ProyectosInformacion";
 import Proyectos from "./Proyectos/ProyectoSection";
 import Preguntas from "./Preguntas"
-import '../../styles/tailwind-component.output.css';
-
+import  "../../tailwind.css"
 
 const ContentSection = ()  => {
   const [isMobile, setIsMobile] = useState(false);
@@ -20,9 +19,10 @@ const ContentSection = ()  => {
 
   return (
 
-    <div id="content-principal" class="w-full h-[600vh] text-white flex justify-center items-centerl">
-      <div id="content-container" class="
-        lg:bg-scroll bg-scroll-mobile
+    <div id="content-principal" className="w-full h-[600vh] text-white flex justify-center items-centerl">
+      <div id="content-container" className="
+      
+        bg-scroll
         w-full h-[8000px] py-24  text-white" >
         <HeroSection  />
         <ProfileSection />

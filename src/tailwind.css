@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+
+@theme {
+  --breakpoint-se: 23.4375rem;  
+  --breakpoint-xr: 25.875rem;           
+  --breakpoint-12p: 24.375rem;
+  --breakpoint-12pm: 26.875rem;
+  --breakpoint-p7: 25.75rem;
+  --breakpoint-gs8: 22.5rem;
+  --breakpoint-gs20: 24rem;
+  --breakpoint-im: 48rem;
+  --breakpoint-ia: 51.25rem;
+  --breakpoint-ip: 64rem;
+  --breakpoint-sp7: 57rem;
+  --breakpoint-sd: 33.75rem;
+  --breakpoint-gzf5: 21.5rem;
+  --breakpoint-azf: 120rem;
+  --breakpoint-sa: 25.75rem;
+  --breakpoint-nhm: 80rem;
+ --breakpoint-laptop: 85.375rem; 
+ --breakpoint-xl: 90rem;
+ --breakpoint-2xl:96rem;
+ --breakpoint-4k: 120rem;
+ --brakpoint-ultrawide: 160rem;
+
+}
+  /* Utilidades personalizadas */
+@layer utilities {
+  .font-bebas {
+    font-family: 'Bebas Neue', sans-serif;
+  }
+
+  .bg-degrade {
+    background: linear-gradient(
+      135deg,
+      #000000 0%,
+      #000428 30%,
+      #004e92 70%,
+      #00cfff 100%
+    );
+    background-size: 100% 300%;
+    background-repeat: no-repeat;
+  }
+
+  .bg-parte-1 {
+    background-position: top;
+  }
+
+  .bg-center { 
+    background-position: center;
+  }
+
+  .bg-parte-3 {
+    background-position: bottom;
+  }
+
+  .bg-degrade-top {
+    background: linear-gradient(
+      360deg,
+      #000000 0%,
+      #000428 30%,
+      #004e92 70%,
+      #00cfff 100%
+    );
+  }
+
+  .bg-scroll {
+    background: linear-gradient(
+      135deg,
+      #000000 0%,
+      #000428 17%,
+      #004e92 40%,
+      #00cfff 100%
+    );
+    background-size: 100%;
+  }
+
+  .bg-scroll-mobile {
+    background: linear-gradient(
+      125deg,
+      #000000 0%,
+      #000428 14%,
+      #004e92 30%,
+      #00cfff 100%
+    );
+  }
+
+  .bg-static-mobile {
+    background: linear-gradient(
+      135deg,
+      #000000 0%,
+      #000428 14%,
+      #004e92 30%,
+      #00cfff 100%
+    );
+    background-size: 100% 300%;
+    background-repeat: no-repeat;
+  }
+}

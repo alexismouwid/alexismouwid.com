@@ -1,5 +1,5 @@
 import React from "react";
-import '../../styles/tailwind-component.output.css';
+import '../../tailwind.css';
 import sprite from './sprite.svg';
 
 
