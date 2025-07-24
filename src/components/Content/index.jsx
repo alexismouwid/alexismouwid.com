@@ -13,6 +13,7 @@ import  "../../tailwind.css"
 
 const ContentSection = ()  => {
   const [isMobile, setIsMobile] = useState(false);
+  const [modeDark, setModeDark] = useState(false);
   
   useIsMobile();
     useScrollTrigger();
@@ -22,7 +23,7 @@ const ContentSection = ()  => {
     <div id="content-principal" className="w-full h-[600vh] text-white flex justify-center items-centerl">
       <div id="content-container" className="
       
-        bg-scroll
+        bg-scroll 
         w-full h-[8000px] py-24  text-white" >
         <HeroSection  />
         <ProfileSection />

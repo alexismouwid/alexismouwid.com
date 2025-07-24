@@ -59,7 +59,7 @@ const SkillsSection = () => (
           { name: 'Node.js', src: 'https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg' },
           { name: 'MongoDB', src: './mongodb.png' },
           { name: 'Figma', src: 'https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg' },
-          { name: 'Github', src: './git.png' },
+          { name: 'Github', src: './gy.png' },
           { name: 'Postman', src: './postman.png' },
           { name: 'Neovim', src: './neovim.png' },
           { name: 'Linux', src: './linux.png' },

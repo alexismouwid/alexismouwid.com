@@ -7,7 +7,7 @@ const Servicios = ({ refServicios }) => {
       id="serv-title"
       ref={refServicios}
       class="fixed top-0 left-0  w-full h-screen items-center 
-    flex flex-col justify-center pointer-events-none align-center
+    flex flex-col justify-center pointer-events-auto align-center
       "
          
     >

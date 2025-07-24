@@ -26,14 +26,18 @@ const AboutMe = () => {
         <div className="flex-1">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-4">
             <div>
-              <h1 className="  text-gray-800 dark:text-white
+              <h2 className="text-gray-800 dark:text-white
 
                relative
-                se:text-[1rem]
-              lg:left-20 lg:text-xl
+                se:text-4xl
+              
               sp7:left-10 sp7:text-2xl
                 azf:text-3xl azf:left-10
-              ">Sobre mi</h1>
+                gs8:text-3xl  gs8:right-3
+                im:left-10 im:text-5xl
+             lg:left-20 lg:text-6xl  
+               
+              ">Sobre mi</h2>
             </div>
             <div className="flex flex-wrap gap-2 se:gap-4 se:text-sm se:relative
               se:left-7
@@ -57,8 +61,11 @@ const AboutMe = () => {
             sp7:text-3xl
             gzf5:text-[1rem]
             2xl:text-3xl
-            lg:mb-8 lg:text-2xl
+            im:text-2xl
+            lg:mb-8 lg:text-3xl
             nhm:text-2xl
+            sd:text-xl
+
             "
 
           >
@@ -75,9 +82,13 @@ const AboutMe = () => {
         ">
         {/* Sección de enfoque */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 relative top-10 lg:relative lg:top-10
+          
            se:text-sm
           lg:text-2xl
-          nhm:text-2xl           ">
+          nhm:text-2xl 
+          im:text-xl          ">
+           
+
           <div className=" p-4 rounded-lg">
             <h3 className="font-semibold lg:text-2xl lg:relative lg:bottom-8  mb-2 ">Mi Enfoque</h3>
             <ul className="space-y-2">
@@ -100,7 +111,8 @@ const AboutMe = () => {
           <div className="space-y-4 relative -top-5 
             lg:relative lg:top-10
             xl:relative xl:top-10
-            sp7:relative sp7:top-10">
+            sp7:relative sp7:top-10
+            im:relative im:top-10">
             <div className="border-l-4 border-blue-500 pl-4 italic">
               <p className="font-medium">"Solo sé que no sé nada"</p>
               <p className="text-sm">- Sócrates</p>
@@ -114,7 +126,7 @@ const AboutMe = () => {
 
         {/* Llamado a la acción */}
         <div className="mt-6 text-center">
-          <p className="mb-4 relative top-5">Busco oportunidades para unirme a equipos talentosos y contribuir con mis habilidades.</p>
+          <p className="mb-4 relative top-5 im:text-xl lg:text-2xl">Busco oportunidades para unirme a equipos talentosos y contribuir con mis habilidades.</p>
         </div>
       </div>
 

@@ -46,7 +46,7 @@ position: fixed;        /* Lo hace quedarse fijo */
   margin-left: 10px;
   position: relative;
   bottom: 5rem;
-  right: -2rem;
+  right: -3rem;
 }
 .logo img{
   background-color: transparent;
@@ -105,7 +105,7 @@ position: fixed;        /* Lo hace quedarse fijo */
   margin-left: 10px;
   position: relative;
   bottom: 5rem;
-  right: -2rem;
+  right: 0rem;
 }
 .logo img{
   background-color: transparent;
@@ -114,6 +114,11 @@ position: fixed;        /* Lo hace quedarse fijo */
   width: 150px;
   height: 150px;
 }
+.nav-links-desktop{
+  position: relative;
+  left: 1rem;
+ 
+    }
 
 
 }

@@ -53,7 +53,7 @@ const Header = ({ menuOpen, setMenuOpen, scrollToHome, scrollToServicios, scroll
           <img width="55px" height="55px" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="Linkedin" className="skill-icon" />
         </a>
         <a href="https://github.com/alexismouwid" target="_blank" rel="noopener noreferrer" className="links-redes">
-          <img width="55px" height="55px" src="./git.png" alt="Github" className="skill-icon" />
+          <img width="55px" height="55px" src="./gy.png" alt="Github" className="skill-icon" />
         </a>
       </div>
            
@@ -69,7 +69,7 @@ const Header = ({ menuOpen, setMenuOpen, scrollToHome, scrollToServicios, scroll
           <img width="45px" height="45px" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="Linkedin" className="skill-icon" />
         </a>
         <a href="https://github.com/alexismouwid" target="_blank" rel="noopener noreferrer" className="links-redes">
-          <img width="45px" height="45px" src="./git.png" alt="Github" className="skill-icon" />
+          <img width="45px" height="45px" src="./gy.png" alt="Github" className="skill-icon" />
         </a>
       </div>
          </ul>

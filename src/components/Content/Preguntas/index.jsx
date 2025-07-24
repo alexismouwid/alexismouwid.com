@@ -29,29 +29,34 @@ const Preguntas = forwardRef((props, ref) => {
     <div 
       ref={ref} 
       id="preguntas-contenedor"
-      class="fixed z-1 mx-auto  
-           left-0 right-0 mx-auto
-      
-
-      overflow-x-hidden
-      top-30
-      overflow-y-auto
-       max-h-screen 
-      lg:top-15 lg:left-20
-      nhm:top-30
-      laptop:top-20
-      2xl:top-35
-              
-      w-full max-w-7xl mx-auto px-4 py-16 grid grid-cols-1 lg:grid-cols-2 gap-12"
+      class="fixed top-0 left-0  w-full h-screen items-center 
+    flex flex-col justify-center pointer-events-auto align-center
+      max-w-7xl px-4 py-16 grid grid-cols-1 lg:grid-cols-2 gap-12
+      "
     >
       <div id="preguntas-left" class="flex flex-col items-center lg:items-start text-center lg:text-left">
         <h2 id="preguntas-titulo" class="text-2xl lg:text-4xl font-extrabold text-[#D4FF00] mb-6 relative
           lg:left-80 lg:-top-5
           md:text-4xl md:mb-20
-          laptop:left-120 laptop:-top-10">
+          laptop:left-120 laptop:-top-10
+          se:relative se:top-15 se:text-2xl
+          lg:top-5
+
+          nhm:left-110 nhm:text-5xl nhm:top-0
+          4k:text-7xl 4k:left-160 4k:-top-30
+        
+          "
+        >
           Preguntas <br class="hidden sm:inline" /> frecuentes
         </h2>
-        <div id="preguntas-image" class="w-50 h-50 sm:w-80 sm:h-80 lg:w-70 lg:h-70  overflow-hidden rounded-xl shadow-lg">
+        <div id="preguntas-image" class="w-50 h-50 sm:w-80 sm:h-80 lg:w-70 lg:h-70  overflow-hidden rounded-xl shadow-lg
+
+          laptop:relative laptop:left-20
+          se:relative se:top-15
+          lg:top-4
+          nhm:left-20
+          4k:left-50
+          ">
           <img
             src="./diseño.jpg"
             alt="preguntas"
@@ -61,7 +66,11 @@ const Preguntas = forwardRef((props, ref) => {
         </div>
       </div>
 
-      <div id="preguntas-right" class="flex flex-col gap-4 relative lg:left-20">
+      <div id="preguntas-right" class="flex flex-col gap-4 relative lg:left-20
+        se:relative se:top-5
+        12p:top-8
+        lg:-top-5   
+        4k:-left-20">
         {preguntas.map((item, index) => (
           <div
             key={index}
@@ -70,7 +79,7 @@ const Preguntas = forwardRef((props, ref) => {
           >
             <div
               id="preguntas-pregunta"
-              class="ejeX flex justify-between items-center cursor-pointer text-white font-medium"
+              class="ejeX flex justify-between items-center cursor-pointer text-white font-medium "
               onClick={() => togglePregunta(index)}
             >
               <span>{item.pregunta}</span>
@@ -79,7 +88,7 @@ const Preguntas = forwardRef((props, ref) => {
               </span>
             </div>
             {activa === index && (
-              <div id="preguntas-respuesta" class="mt-2 text-[1rem] text-sm text-white">
+              <div id="preguntas-respuesta" class="mt-2 text-[0.9rem] text-sm text-white font-sans mb-8 relative bottom-2">
                 {item.respuesta}
               </div>
             )}

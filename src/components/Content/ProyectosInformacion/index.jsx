@@ -21,7 +21,7 @@ const ProyectosInformacion = forwardRef((props, ref) => {
       ">
       <h1 class="text-balance  mx-auto
 
-            se:text-sm
+        se:text-sm se:top-20 se:relative
             xr:text-4xl
             12p:text-3xl
 
@@ -46,7 +46,7 @@ const ProyectosInformacion = forwardRef((props, ref) => {
       <p class="
 
 
-            se:text-xl
+            se:text-xl se:top-15 se:relative
             xr:text-2xl
             12p:text-2xl
 

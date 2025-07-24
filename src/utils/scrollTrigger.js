@@ -67,7 +67,7 @@ export default function useScrollTrigger() {
     animateSection("#proyecto-4");
 
     // Sección 10: Preguntas
-    animateSection("#preguntas-contenedor", false); // Última: sin pausa extra
+    animateSection("#preguntas-contenedor"); // Última: sin pausa extra
 
   }, []);
 }

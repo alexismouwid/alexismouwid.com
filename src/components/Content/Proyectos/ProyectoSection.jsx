@@ -23,7 +23,7 @@ const Proyectos = forwardRef((props, ref) => {
         <div id="proyecto-1" 
  class="
           fixed top-0 left-0  w-full h-screen items-center 
-    flex flex-col justify-center pointer-events-none align-center
+    flex flex-col justify-center pointer-events-auto align-center
           se:w-[500px] se:h-[400px] se:top-50
           xr:top-60
           12p:top-70
@@ -32,7 +32,7 @@ const Proyectos = forwardRef((props, ref) => {
           im:left-30
           ia:top-90 ia:w-[550px] ia:h-[380px]
           
-          ip:left-35 ip:top-110 ip:w-[700px] ip:h-[450px]
+          ip:left-35 ip:top-120 ip:w-[700px] ip:h-[450px]
           sp7:top-110 sp7:w-[700px] sp7:h-[450px]
           lg:top-30
           laptop:top-30 laptop:left-70
@@ -66,7 +66,7 @@ const Proyectos = forwardRef((props, ref) => {
           class="
           fixed z-1 
           fixed top-0 left-0  w-full h-screen items-center 
-    flex flex-col justify-center pointer-events-none align-center
+    flex flex-col justify-center pointer-events-auto align-center
           se:w-[500px] se:h-[400px] se:top-50
           xr:top-60
           12p:top-70
@@ -105,7 +105,7 @@ const Proyectos = forwardRef((props, ref) => {
           class="
          fixed z-1 
           fixed top-0 left-0  w-full h-screen items-center 
-    flex flex-col justify-center pointer-events-none align-center
+    flex flex-col justify-center pointer-events-auto align-center
           se:w-[500px] se:h-[400px] se:top-50
           xr:top-60
           12p:top-70
@@ -145,7 +145,7 @@ const Proyectos = forwardRef((props, ref) => {
           class=" 
            fixed z-1 
           fixed top-0 left-0  w-full h-screen items-center 
-    flex flex-col justify-center pointer-events-none align-center
+    flex flex-col justify-center pointer-events-auto align-center
           se:w-[500px] se:h-[400px] se:top-50
           xr:top-60
           12p:top-70

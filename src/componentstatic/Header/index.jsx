@@ -58,7 +58,7 @@ const Header = ({ menuOpen, setMenuOpen,  scrollToHome, scrollToSobreMi, scrollT
                 className='links-redes'>
                 <img 
                   width="35px" height="35px" 
-                  src="./git.png" alt="Github" 
+                  src="./gy.png" alt="Github" 
                   className="habilidad-icon" 
                 />
               </a>
@@ -82,7 +82,7 @@ const Header = ({ menuOpen, setMenuOpen,  scrollToHome, scrollToSobreMi, scrollT
             </div>
 
             <li classname="li-mobile">
-              <button onclick={() => handlescrollandclose(scrolltohome)} classname="btn1">home</button>
+              <button onclick={() => handlescrollandclose(scrolltohome)} className="btn1">home</button>
             </li>
             <li className="li-mobile">
               <button onClick={() => handleScrollAndClose(scrollToServicios)} className="btn2">Servicios</button>
@@ -111,16 +111,16 @@ const Header = ({ menuOpen, setMenuOpen,  scrollToHome, scrollToSobreMi, scrollT
             </li>
 
             <li className="li-desktop ejeL">
-              <button onClick={scrollToServicios} className="button2-desktop">Servicios</button>
+              <button onClick={scrollToServicios} className="button3-desktop">Servicios</button>
             </li>
             <li className="li-desktop ejeL">
-              <button onClick={scrollToProyectos} className="button3-desktop">
+              <button onClick={scrollToProyectos} className="button4-desktop">
                 Proyectos
                 <span className="check">Recientes</span>
               </button>
             </li>
             <li className="li-desktop ejeL">
-              <button onClick={scrollToPreguntas} className="button4-desktop">Preguntas</button>
+              <button onClick={scrollToPreguntas} className="button5-desktop">Preguntas</button>
               <span className="check-f">Frecuentes</span>
             </li>
  
@@ -145,7 +145,7 @@ const Header = ({ menuOpen, setMenuOpen,  scrollToHome, scrollToSobreMi, scrollT
                 className='links-redes'>
                 <img 
                   width="45px" height="45px" 
-                  src="./git.png" alt="Github" 
+                  src="./gy.png" alt="Github" 
                   className="habilidad-icon" 
                 />
               </a>
