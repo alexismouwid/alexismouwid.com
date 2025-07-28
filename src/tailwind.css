@@ -22,7 +22,7 @@
  --breakpoint-xl: 90rem;
  --breakpoint-2xl:96rem;
  --breakpoint-4k: 120rem;
- --brakpoint-ultrawide: 160rem;
+ --brakpoint-3xl: 160rem;
 
 }
   /* Utilidades personalizadas */
@@ -30,7 +30,12 @@
   .font-bebas {
     font-family: 'Bebas Neue', sans-serif;
   }
-
+ @media (min-width: 1024px) and (min-height: 1366px) {
+    .ipad-pro {
+      position:relative
+      top: 10rem; /* green-500 */
+    }
+  }
   .bg-degrade {
     background: linear-gradient(
       135deg,
@@ -96,5 +101,14 @@
     );
     background-size: 100% 300%;
     background-repeat: no-repeat;
+  }
+  .bg-static-mobile-parte-1{
+    background-position: top;
+  }
+  .bg-static-mobile-parte-2{
+    background-position: center;
+  }
+  .bg-static-mobile-parte-3{
+    background-position: bottom;
   }
 }

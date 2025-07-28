@@ -36,6 +36,7 @@ const AboutMe = () => {
                 gs8:text-3xl  gs8:right-3
                 im:left-10 im:text-5xl
              lg:left-20 lg:text-6xl  
+                4k:text-[6rem]
                
               ">Sobre mi</h2>
             </div>
@@ -43,12 +44,13 @@ const AboutMe = () => {
               se:left-7
               im:-left-50
               sd:left-30
+              
               " >
               <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm 
-                lg:text-xl">Front-End</span>
+                lg:text-xl 4k:text-4xl">Front-End</span>
               <span className="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm
-                lg:text-xl">Back-End</span>
-              <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-sm lg:text-xl">Computer-Science</span>
+                lg:text-xl 4k:text-4xl">Back-End</span>
+              <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-sm lg:text-xl 4k:text-4xl">Computer-Science</span>
             </div>
           </div>
           
@@ -65,6 +67,7 @@ const AboutMe = () => {
             lg:mb-8 lg:text-3xl
             nhm:text-2xl
             sd:text-xl
+            4k:text-4xl
 
             "
 
@@ -86,7 +89,8 @@ const AboutMe = () => {
            se:text-sm
           lg:text-2xl
           nhm:text-2xl 
-          im:text-xl          ">
+          im:text-xl   
+          4k:text-4xl">
            
 
           <div className=" p-4 rounded-lg">
@@ -126,7 +130,8 @@ const AboutMe = () => {
 
         {/* Llamado a la acción */}
         <div className="mt-6 text-center">
-          <p className="mb-4 relative top-5 im:text-xl lg:text-2xl">Busco oportunidades para unirme a equipos talentosos y contribuir con mis habilidades.</p>
+          <p className="mb-4 relative top-5 im:text-xl lg:text-2xl
+          4k:text-4xl">Busco oportunidades para unirme a equipos talentosos y contribuir con mis habilidades.</p>
         </div>
       </div>
 

@@ -43,7 +43,7 @@ const SkillsSection = () => (
         className="grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6
           gap-1 sm:gap-4 md:gap-4
           w-full max-w-5xl mx-auto
-
+font-sans font-bold
         se:relative se:top-10
         gs8:relative gs8:top-10 gs8:text-3xl
       

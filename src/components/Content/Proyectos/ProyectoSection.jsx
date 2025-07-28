@@ -31,7 +31,7 @@ const Proyectos = forwardRef((props, ref) => {
           gs8:top-50 gs8:w-[500px] gs8:h-[400px]
           im:left-30
           ia:top-90 ia:w-[550px] ia:h-[380px]
-          
+          gzf5:top-50 gzf5:w-[700px] gzf5:h-[350px]
           ip:left-35 ip:top-120 ip:w-[700px] ip:h-[450px]
           sp7:top-110 sp7:w-[700px] sp7:h-[450px]
           lg:top-30

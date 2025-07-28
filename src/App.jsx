@@ -47,6 +47,7 @@ const totalSteps = 18; // 9 secciones * (entrada + salida)
  <Header 
       menuOpen={menuOpen}
       setMenuOpen={setMenuOpen}
+      toggleApp={toggleApp}
      />
  <Content />
           <div id="n8n-chat" />
