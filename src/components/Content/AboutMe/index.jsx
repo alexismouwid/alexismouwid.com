@@ -3,141 +3,51 @@ import '../../../tailwind.css';
 
 const AboutMe = () => {
   return (
-    <div id="about-me" className="fixed top-0 left-0  w-full h-screen items-center 
-    flex flex-col justify-center pointer-events-none align-center ">
-     
-      <div className="w-full flex flex-col   gap-6 items-center
-         mb-8 
-        relative 
-       md:flex-row md:items-start
-        se:top-20
-        gs8:top-22
-        lg:top-10
-        nhm:top-10
-      
-               
-        
-        "
-        
+    <div id="about-me" className="fixed top-0 left-0 w-full h-screen flex flex-col justify-center items-center pointer-events-none px-6 lg:px-20">
+      <div className="w-full max-w-4xl flex flex-col gap-8 pointer-events-auto">
 
-      >
-       
-        
-        <div className="flex-1">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-4">
-            <div>
-              <h2 className="text-gray-800 dark:text-white
-
-               relative
-                se:text-4xl
-              
-              sp7:left-10 sp7:text-2xl
-                azf:text-3xl azf:left-10
-                gs8:text-3xl  gs8:right-3
-                im:left-10 im:text-5xl
-             lg:left-20 lg:text-6xl  
-                4k:text-[6rem]
-               
-              ">Sobre mi</h2>
-            </div>
-            <div className="flex flex-wrap gap-2 se:gap-4 se:text-sm se:relative
-              se:left-7
-              im:-left-50
-              sd:left-30
-              
-              " >
-              <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm 
-                lg:text-xl 4k:text-4xl">Front-End</span>
-              <span className="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm
-                lg:text-xl 4k:text-4xl">Back-End</span>
-              <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-sm lg:text-xl 4k:text-4xl">Computer-Science</span>
-            </div>
-          </div>
-          
-          {/* Resumen profesional */}
-          <p className=" 
-             
-            text-gray-700 dark:text-gray-300 font-sans text-sm mb-4
-            se:text-xs
-            lg:text-2xl
-            sp7:text-3xl
-            gzf5:text-[1rem]
-            2xl:text-3xl
-            im:text-2xl
-            lg:mb-8 lg:text-3xl
-            nhm:text-2xl
-            sd:text-xl
-            4k:text-4xl
-
-            "
-
-          >
-          Desarrollador con 2 años de experiencia, autodidacta y apasionado por crear soluciones web eficientes. Especializado en Javascript, con experiencia en proyectos personales desde landing pages hasta e-commerce.
-          </p>
+        <div className="flex flex-wrap gap-2">
+          <span className="px-3 py-1 bg-blue-500/10 border border-blue-500/30 text-blue-300 rounded-full text-xs lg:text-base 4k:text-2xl font-mono tracking-wider">Front-End</span>
+          <span className="px-3 py-1 bg-green-500/10 border border-green-500/30 text-green-300 rounded-full text-xs lg:text-base 4k:text-2xl font-mono tracking-wider">Back-End</span>
+          <span className="px-3 py-1 bg-purple-500/10 border border-purple-500/30 text-purple-300 rounded-full text-xs lg:text-base 4k:text-2xl font-mono tracking-wider">Computer-Science</span>
         </div>
-      </div>
 
-      {/* Contenido principal */}
-      <div className="space-y-6 text-gray-700 dark:text-gray-300 font-sans 
-       
+        <h2 className="text-white text-4xl lg:text-6xl 2xl:text-7xl 4k:text-8xl font-bold">
+          Sobre mí
+        </h2>
 
+        <p className="text-gray-300 font-sans text-base lg:text-xl 2xl:text-2xl 4k:text-3xl leading-relaxed max-w-2xl">
+          Desarrollador con 2 años de experiencia, autodidacta y apasionado por crear soluciones web eficientes. Especializado en Javascript, con experiencia en proyectos desde landing pages hasta e-commerce.
+        </p>
 
-        ">
-        {/* Sección de enfoque */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 relative top-10 lg:relative lg:top-10
-          
-           se:text-sm
-          lg:text-2xl
-          nhm:text-2xl 
-          im:text-xl   
-          4k:text-4xl">
-           
-
-          <div className=" p-4 rounded-lg">
-            <h3 className="font-semibold lg:text-2xl lg:relative lg:bottom-8  mb-2 ">Mi Enfoque</h3>
-            <ul className="space-y-2">
-              <li className="flex items-start">
-                <span className="mr-2">✔</span>
-                <span>Aprendizaje continuo (recursos online/Academias)</span>
-              </li>
-              <li className="flex items-start">
-                <span className="mr-2">✔</span>
-                <span>Mentalidad resolutiva y perseverante</span>
-              </li>
-              <li className="flex items-start">
-                <span className="mr-2">✔</span>
-                <span>Colaboración proactiva en equipos</span>
-              </li>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <h3 className="text-white font-semibold text-lg lg:text-xl 4k:text-3xl mb-4">Mi Enfoque</h3>
+            <ul className="space-y-3 text-gray-300 font-sans text-sm lg:text-lg 4k:text-2xl">
+              <li className="flex items-start gap-2"><span className="text-[#D4FF00] mt-1">✔</span><span>Aprendizaje continuo con recursos Open Source</span></li>
+              <li className="flex items-start gap-2"><span className="text-[#D4FF00] mt-1">✔</span><span>Mentalidad resolutiva y perseverante</span></li>
+              <li className="flex items-start gap-2"><span className="text-[#D4FF00] mt-1">✔</span><span>Colaboración proactiva en equipos</span></li>
             </ul>
           </div>
-          
-          {/* Sección de citas */}
-          <div className="space-y-4 relative -top-5 
-            lg:relative lg:top-10
-            xl:relative xl:top-10
-            sp7:relative sp7:top-10
-            im:relative im:top-10">
-            <div className="border-l-4 border-blue-500 pl-4 italic">
-              <p className="font-medium">"Solo sé que no sé nada"</p>
-              <p className="text-sm">- Sócrates</p>
-            </div>
-            <div className="border-l-4 border-blue-500 pl-4 italic">
-              <p className="font-medium">"Sigamos hambrientos y alocados"</p>
-              <p className="text-sm">- Steve Jobs</p>
-            </div>
+
+          <div className="space-y-4">
+            <blockquote className="border-l-2 border-[#D4FF00] pl-4">
+              <p className="text-white font-medium italic lg:text-lg 4k:text-2xl">"Solo sé que no sé nada"</p>
+              <p className="text-gray-400 text-sm 4k:text-xl mt-1">— Sócrates</p>
+            </blockquote>
+            <blockquote className="border-l-2 border-[#D4FF00] pl-4">
+              <p className="text-white font-medium italic lg:text-lg 4k:text-2xl">"Sigamos hambrientos y alocados"</p>
+              <p className="text-gray-400 text-sm 4k:text-xl mt-1">— Steve Jobs</p>
+            </blockquote>
           </div>
         </div>
 
-        {/* Llamado a la acción */}
-        <div className="mt-6 text-center">
-          <p className="mb-4 relative top-5 im:text-xl lg:text-2xl
-          4k:text-4xl">Busco oportunidades para unirme a equipos talentosos y contribuir con mis habilidades.</p>
-        </div>
+        <p className="text-gray-300 font-sans text-sm lg:text-lg 4k:text-2xl">
+          Busco oportunidades para unirme a equipos talentosos y contribuir con mis habilidades.
+        </p>
       </div>
-
-         </div>
+    </div>
   );
 };
 
 export default AboutMe;
-

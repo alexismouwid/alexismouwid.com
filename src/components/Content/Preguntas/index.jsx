@@ -5,11 +5,11 @@ import '../../../tailwind.css';
 const preguntas = [
   {
     pregunta: "¿De dónde obtuviste tus conocimientos?",
-    respuesta: "A través de formación autodidacta, cursos especializados y experiencia práctica.",
+    respuesta: "A través de formación autodidacta, cursos especializados y experiencia práctica en proyectos reales.",
   },
   {
     pregunta: "¿Cuánto cobras por un proyecto?",
-    respuesta: "Los precios varían según la complejidad y duración del proyecto. ¡Contáctame para una cotización!",
+    respuesta: "Los precios varían según la complejidad y duración del proyecto. ¡Contáctame para una cotización personalizada!",
   },
   {
     pregunta: "¿Cómo puedo ayudarte a hacer crecer tu negocio?",
@@ -19,81 +19,66 @@ const preguntas = [
 
 const Preguntas = forwardRef((props, ref) => {
   useVisibilityObserver(".ejeX");
-
   const [activa, setActiva] = useState(null);
+
   const togglePregunta = (index) => {
     setActiva(activa === index ? null : index);
   };
 
   return (
-    <div 
-      ref={ref} 
+    <div
+      ref={ref}
       id="preguntas-contenedor"
-      class="fixed top-0 left-0  w-full h-screen items-center 
-    flex flex-col justify-center pointer-events-auto align-center
-      max-w-7xl px-4 py-16 grid grid-cols-1 lg:grid-cols-2 gap-12
-      "
+      className="fixed top-0 left-0 w-full h-screen flex flex-col justify-center items-center pointer-events-auto px-6 lg:px-20"
     >
-      <div id="preguntas-left" class="flex flex-col items-center lg:items-start text-center lg:text-left">
-        <h2 id="preguntas-titulo" class="text-2xl lg:text-4xl font-extrabold text-[#D4FF00] mb-6 relative
-          lg:left-80 lg:-top-5
-          md:text-4xl md:mb-20
-          laptop:left-120 laptop:-top-10
-          se:relative se:top-15 se:text-2xl
-          lg:top-5
+      <div className="w-full max-w-4xl flex flex-col lg:flex-row gap-12 items-center lg:items-start">
 
-          nhm:left-110 nhm:text-5xl nhm:top-0
-          4k:text-7xl 4k:left-160 4k:-top-30
-        
-          "
-        >
-          Preguntas <br class="hidden sm:inline" /> frecuentes
-        </h2>
-        <div id="preguntas-image" class="w-50 h-50 sm:w-80 sm:h-80 lg:w-70 lg:h-70  overflow-hidden rounded-xl shadow-lg
-
-          laptop:relative laptop:left-20
-          se:relative se:top-15
-          lg:top-4
-          nhm:left-20
-          4k:left-50
-          ">
+        <div className="w-full lg:w-[40%] flex flex-col items-center lg:items-start gap-6">
+          <div>
+            <p className="text-sm tracking-[0.3em] uppercase text-[#D4FF00] font-mono mb-4">FAQ</p>
+            <h2 className="text-4xl lg:text-5xl 2xl:text-6xl 4k:text-7xl font-bold text-white">
+              Preguntas<br />frecuentes
+            </h2>
+          </div>
           <img
             src="./diseño.jpg"
             alt="preguntas"
-            id="image-proyect"
-            class="w-full h-full object-cover  mask-radial-at-center mask-radial-from-70% mask-radial-to-90%"
+            className="w-64 h-64 lg:w-72 lg:h-72 4k:w-96 4k:h-96 object-cover rounded-2xl mask-radial-at-center mask-radial-from-70% mask-radial-to-90%"
           />
         </div>
-      </div>
 
-      <div id="preguntas-right" class="flex flex-col gap-4 relative lg:left-20
-        se:relative se:top-5
-        12p:top-8
-        lg:-top-5   
-        4k:-left-20">
-        {preguntas.map((item, index) => (
-          <div
-            key={index}
-            id="preguntas-item"
-            class="bg-gray-800 border border-gray-700 rounded-xl shadow p-4 lg:w-210 lg:h-22 font-bebas lg:text-2xl lg:relative right-70 top-30 hover:contrast-125 transition"
-          >
+        <div className="w-full lg:w-[60%] flex flex-col gap-3">
+          {preguntas.map((item, index) => (
             <div
-              id="preguntas-pregunta"
-              class="ejeX flex justify-between items-center cursor-pointer text-white font-medium "
+              key={index}
+              className="bg-white/5 border border-white/10 rounded-xl p-5 hover:border-[#D4FF00]/30 hover:bg-white/10 transition-all duration-300 cursor-pointer"
               onClick={() => togglePregunta(index)}
             >
-              <span>{item.pregunta}</span>
-              <span id="icono" class="text-xl font-bold">
-                {activa === index ? "−" : "+"}
-              </span>
-            </div>
-            {activa === index && (
-              <div id="preguntas-respuesta" class="mt-2 text-[0.9rem] text-sm text-white font-sans mb-8 relative bottom-2">
-                {item.respuesta}
+              <div className="ejeX flex justify-between items-center text-white font-semibold font-sans text-base 2xl:text-lg 4k:text-xl">
+                <span>{item.pregunta}</span>
+                <span className="text-[#D4FF00] text-xl font-bold ml-4 flex-shrink-0">
+                  {activa === index ? "−" : "+"}
+                </span>
               </div>
-            )}
+              {activa === index && (
+                <p className="mt-3 text-gray-300 font-sans text-sm 2xl:text-base 4k:text-lg leading-relaxed">
+                  {item.respuesta}
+                </p>
+              )}
+            </div>
+          ))}
+
+          <div className="mt-6">
+            <a
+              href={`https://api.whatsapp.com/send?phone=573044266017&text=Hola%2C+quiero+más+información`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block font-sans font-semibold text-white border border-[#D4FF00] px-6 py-3 rounded-sm text-sm 2xl:text-lg 4k:text-2xl hover:bg-[#D4FF00] hover:text-black transition-all duration-300"
+            >
+              ¡Empecemos a trabajar juntos!
+            </a>
           </div>
-        ))}
+        </div>
       </div>
     </div>
   );
