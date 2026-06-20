@@ -4,7 +4,7 @@ import sprite from './sprite.svg';
 
 const Perfil = () => {
   return (
-    <div className="w-full lg:w-[30%] flex flex-col items-center justify-center gap-4 p-6">
+    <div className="w-full lg:w-[30%] min-h-screen lg:min-h-0 flex flex-col items-center justify-center gap-4 p-8 lg:p-6">
       <img
         id="perfil-image"
         alt="alexis sonriendo"
@@ -23,7 +23,6 @@ const Perfil = () => {
           Desarrollador Web
         </p>
       </div>
-
       <div className="flex gap-3 flex-wrap justify-center mt-2">
         <a className="p-2 size-9 flex bg-violet-100 items-center justify-center rounded-full hover:bg-purple-200 hover:scale-110 transition-transform" href="https://twitch.tv/alexis" target="_blank" rel="noreferrer" aria-label="twitch">
           <svg className="w-5 h-5" width="28" height="28" aria-hidden="true"><use href={`${sprite}#twitch`} /></svg>
