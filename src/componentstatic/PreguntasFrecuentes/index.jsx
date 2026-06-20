@@ -60,7 +60,7 @@ const PreguntasFrecuentes = forwardRef((props, ref) => {
 
           <div className="mt-8">
             <a
-              href="https://api.whatsapp.com/send?phone=573043405723&text=Hola%2C+quiero+más+información"
+              href="https://api.whatsapp.com/send?phone=573044266017&text=Hola%2C+quiero+más+información"
               target="_blank"
               className="inline-block font-sans font-semibold text-white border border-[#D4FF00] px-6 py-3 rounded-sm text-sm hover:bg-[#D4FF00] hover:text-black transition-all duration-300"
             >

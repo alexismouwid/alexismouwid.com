@@ -13,14 +13,14 @@ const Perfil = () => {
       />
       <div className="flex flex-col items-center gap-1">
         <span className="text-sky-400 text-base font-mono px-3 py-1 border border-sky-500/40 rounded-full bg-black/50 inline-flex items-center gap-1">
-          @mrcommitt
+          @LOROAI
           <svg className="size-4" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
             <path fillRule="evenodd" clipRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707a1 1 0 00-1.414-1.414L9 11.172l-1.293-1.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" />
           </svg>
         </span>
         <p className="font-bebas text-2xl lg:text-xl xl:text-2xl 2xl:text-3xl 4k:text-4xl text-white">Alexis Vega</p>
         <p className="font-sans text-sm lg:text-base 2xl:text-lg 4k:text-xl text-gray-300">
-          Desarrollador web <span className="text-[#D4FF00]">Junior</span>
+          Desarrollador Web
         </p>
       </div>
 
