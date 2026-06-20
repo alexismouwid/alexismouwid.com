@@ -54,6 +54,18 @@ export default function useScrollTrigger() {
     // Sección 5: Proyectos Información
     animateSection("#proyectos-info");
 
+
+// Sección 7: Proyecto 2
+    animateSection("#proyecto-5");
+// Sección 7: Proyecto 2
+    animateSection("#proyecto-6");
+ animateSection("#proyecto-3");
+  animateSection("#proyecto-7");
+ animateSection("#proyecto-8");
+animateSection("#proyecto-9");
+
+
+
     // Sección 6: Proyecto 1
     animateSection("#proyecto-1");
 
@@ -61,10 +73,11 @@ export default function useScrollTrigger() {
     animateSection("#proyecto-2");
 
     // Sección 8: Proyecto 3
-    animateSection("#proyecto-3");
+   
 
     // Sección 9: Proyecto 4
     animateSection("#proyecto-4");
+
 
     // Sección 10: Preguntas
     animateSection("#preguntas-contenedor"); // Última: sin pausa extra

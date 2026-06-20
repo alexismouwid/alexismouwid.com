@@ -42,7 +42,7 @@ const Perfil = () => {
             4k:text-[2.4rem]
             "
           >
-            @mrcommitt
+            @LOROAI
             <svg
               class="ml-1 size-5 text-skv-400 inline"
               fill="currentColor"

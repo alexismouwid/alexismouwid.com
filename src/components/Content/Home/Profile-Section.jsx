@@ -41,7 +41,7 @@ const ProfileSection = () => (
   4k:text-4xl
             "
           >
-            @mrcommitt
+            @loroai
             <svg
               class="ml-1 size-5 text-skv-400 inline"
               fill="currentColor"

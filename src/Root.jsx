@@ -5,7 +5,7 @@ import App2 from './App2.jsx';
 
 const Root = () => {
 
-  const [showApp2, setShowApp2] = useState(false);
+  const [showApp2, setShowApp2] = useState(true);
 
   const toggleApp = () => setShowApp2(prev => !prev);
 
