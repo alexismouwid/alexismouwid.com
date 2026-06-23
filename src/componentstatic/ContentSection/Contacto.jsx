@@ -21,7 +21,8 @@ const Contacto = () => {
         href={`https://api.whatsapp.com/send?phone=573044266017&text=Hola%2C+quiero+más+información`}
         target="_blank"
         rel="noopener noreferrer"
-        className="self-start font-sans font-semibold text-white border border-[#D4FF00] rounded-sm px-6 py-3 text-sm sm:text-base transition-all duration-300 hover:bg-[#D4FF00] hover:text-black"
+       className="inline-block font-bebas text-2xl relative top-5 backdrop-blur-sm bg-blue-950/40 rounded-[10px] transition-all duration-300 ease-in-out hover:!text-black hover:bg-[#D4FF00] hover:backdrop-blur-none p-2 sm:p-3" 
+style={{ color: "#D4FF00", border: "1px solid #D4FF00" }}
       >
         Contáctame Ahora
       </a>

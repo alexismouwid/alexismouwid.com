@@ -62,7 +62,8 @@ const PreguntasFrecuentes = forwardRef((props, ref) => {
             <a
               href="https://api.whatsapp.com/send?phone=573044266017&text=Hola%2C+quiero+más+información"
               target="_blank"
-              className="inline-block font-sans font-semibold text-white border border-[#D4FF00] px-6 py-3 rounded-sm text-sm hover:bg-[#D4FF00] hover:text-black transition-all duration-300"
+              className="inline-block font-bebas text-2xl relative top-0 backdrop-blur-sm bg-blue-950/40 rounded-[15px] transition-all duration-300 ease-in-out hover:!text-black hover:bg-[#D4FF00] hover:backdrop-blur-none p-2 sm:p-3" 
+style={{ color: "#D4FF00", border: "1px solid #D4FF00" }}
             >
               ¡Empecemos a trabajar juntos!
             </a>

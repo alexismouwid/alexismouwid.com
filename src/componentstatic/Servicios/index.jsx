@@ -27,7 +27,7 @@ const Servicios = forwardRef((_, ref) => {
         Servicios
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-5xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-7xl">
         {servicios.map((s, i) => (
           <div
             key={i}
@@ -43,7 +43,8 @@ const Servicios = forwardRef((_, ref) => {
         <a
           href="https://api.whatsapp.com/send?phone=573044266017&text=Hola%2C+quiero+más+información"
           target="_blank"
-          className="inline-block font-sans font-semibold text-white border border-[#D4FF00] px-6 py-3 rounded-sm text-sm hover:bg-[#D4FF00] hover:text-black transition-all duration-300"
+          className="inline-block font-bebas text-2xl relative top-0 bottom-5 backdrop-blur-sm bg-blue-950/40 rounded-[15px] transition-all duration-300 ease-in-out hover:!text-black hover:bg-[#D4FF00] hover:backdrop-blur-none p-2 sm:p-3"
+    style={{ color: "#D4FF00", border: "1px solid #D4FF00" }}
         >
           Contáctame
         </a>
