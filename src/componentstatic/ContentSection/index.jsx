@@ -27,8 +27,8 @@ const ContentSection = forwardRef((props, ref) => {
     <div ref={ref} className="w-full min-h-screen flex flex-col lg:flex-row items-center justify-center px-4 py-16 gap-6">
       <Contacto />
       <Perfil />
-      <Habilidades />
     </div>
+
   );
 });
 

@@ -6,6 +6,7 @@ import { useDynamicCss } from './utils/useDynamicCss';
 import { useN8nChat } from './utils/useN8nChat';
 import Header from './componentstatic/Header';
 import ContentSection from './componentstatic/ContentSection';
+import StackSection from './componentstatic/StackSection/StackSection.jsx';
 import AboutMe from './componentstatic/AboutMe';
 import Servicios from './componentstatic/Servicios';
 import ProyectosInformacion from './componentstatic/ProyectosInformacion';
@@ -23,6 +24,7 @@ export default function App2( {toggleApp} ) {
   const preguntasRef = useRef(null);
   const homeRef = useRef(null);
   const sobreMiRef = useRef(null);
+  const stackRef = useRef(null);
  
 
   //declared Utils
@@ -38,6 +40,11 @@ const scrollToHome = () => {
 
   const scrollToSobreMi = () => {
     sobreMiRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+
+  const scrollToStack = () => {
+    stackRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
   const scrollToServicios = () => {
@@ -68,7 +75,9 @@ const scrollToHome = () => {
       scrollToProyectos={scrollToProyectos}
       scrollToPreguntas={scrollToPreguntas}/>
       <ContentSection ref={homeRef}/>
+    <StackSection ref={stackRef}/>
         <AboutMe ref={sobreMiRef}/>
+    
       <Servicios ref={serviciosRef}/>
         <ProyectosInformacion ref={proyectosRef}/>
       <ProyectosRecientes ref={proyectosRef}/>

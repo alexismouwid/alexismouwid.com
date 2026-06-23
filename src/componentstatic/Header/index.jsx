@@ -3,15 +3,16 @@ import "../../tailwind.css";
 
 const navItems = [
   { label: "Home", fn: "scrollToHome" },
+ { label: "Stack", fn: "scrollToStack" },
   { label: "Sobre mí", fn: "scrollToSobreMi" },
   { label: "Servicios", fn: "scrollToServicios" },
   { label: "Proyectos", fn: "scrollToProyectos" },
   { label: "Preguntas", fn: "scrollToPreguntas" },
 ];
 
-const Header = ({ menuOpen, setMenuOpen, scrollToHome, scrollToSobreMi, scrollToServicios, scrollToProyectos, scrollToPreguntas }) => {
+const Header = ({ menuOpen, setMenuOpen, scrollToHome, scrollToStack,scrollToSobreMi, scrollToServicios, scrollToProyectos, scrollToPreguntas }) => {
   const headerRef = useRef(null);
-  const fns = { scrollToHome, scrollToSobreMi, scrollToServicios, scrollToProyectos, scrollToPreguntas };
+  const fns = { scrollToHome, scrollToStack, scrollToSobreMi,  scrollToServicios, scrollToProyectos, scrollToPreguntas };
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
