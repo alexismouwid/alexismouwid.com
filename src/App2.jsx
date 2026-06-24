@@ -70,6 +70,7 @@ const scrollToHome = () => {
       menuOpen={menuOpen}
       setMenuOpen={setMenuOpen}
       scrollToHome={scrollToHome}
+    scrollToStack={scrollToStack}
    scrollToSobreMi={scrollToSobreMi}
       scrollToServicios={scrollToServicios}
       scrollToProyectos={scrollToProyectos}

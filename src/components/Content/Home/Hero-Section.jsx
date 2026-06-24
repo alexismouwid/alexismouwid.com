@@ -109,8 +109,8 @@ const HeroSection = forwardRef((props, ref) => {
             target="_blank"
             rel="noopener noreferrer"
             id="button-static"
-            class="inline-block font-bebas text-2xl sm:text-2xl relative top-5 text-white backdrop-blur-sm bg-transparent border border-[#D4FF00] rounded-[2px] transition-all duration-300 ease-in-out hover:text-black hover:bg-[#D4FF00] hover:backdrop-blur-none p-2 sm:p-3 hover:contrast-125 relative top-10"
-          >
+            class="inline-block font-bebas text-2xl sm:text-2xl relative top-5 text-white bg-blue-950/40 backdrop-blur-sm bg-transparent border border-[#D4FF00] rounded-[2px] transition-all duration-300 ease-in-out hover:!text-black hover:bg-[#D4FF00] hover:backdrop p-2 sm:p-3 hover:contrast-125 relative top-10"
+        style={{ color: "#D4FF00", border: "1px solid #D4FF00" }}  >
             Contactame Ahora
           </a>
         </div>

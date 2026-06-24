@@ -23,29 +23,11 @@ const stack = [
 ];
 
 const StackSection = forwardRef((props, ref) => {
-  const sectionRef = useRef(null);
-
-  useGSAP(() => {
-    gsap.from(".stack-title", {
-      scrollTrigger: { trigger: sectionRef.current, start: "top 80%" },
-      y: 40,
-      opacity: 0,
-      duration: 0.8,
-    });
-    gsap.from(".stack-item", {
-      scrollTrigger: { trigger: sectionRef.current, start: "top 70%" },
-      y: 60,
-      opacity: 0,
-      stagger: 0.08,
-      duration: 0.6,
-      ease: "power2.out",
-    });
-  }, []);
 
   return (
     <section
-      ref={ref || sectionRef}
-      className="w-full py-24 px-6 flex flex-col items-center gap-12"
+ ref={ref}
+     className="w-full py-24 px-6 flex flex-col items-center gap-8"
     >
       <div className="stack-title flex flex-col items-center gap-3 text-center">
         <p className="text-sm tracking-[0.3em] uppercase text-[#D4FF00] font-mono">
@@ -54,7 +36,7 @@ const StackSection = forwardRef((props, ref) => {
         <h2 className="font-bebas text-5xl sm:text-6xl xl:text-7xl text-white">
           Mi Stack Tecnológico
         </h2>
-        <p className="text-gray-400 font-sans text-base max-w-md">
+        <p className="text-white font-sans text-base max-w-md">
           Herramientas y tecnologías con las que construyo soluciones reales.
         </p>
         <div className="w-16 h-[2px] bg-[#D4FF00] mt-2" />
