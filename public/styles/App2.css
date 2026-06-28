@@ -106,10 +106,10 @@ html, body, #root, .App2 {
   padding: 0;
   background: linear-gradient(
         160deg,
-        #000000 0%,
-        #000428 24%,
-        #004e92 40%,
-        #00cfff 100%
+        #050521 0%,
+        #050521 24%,
+        #050521 40%,
+        #050521 100%
       );
 
   overflow-x: hidden;
