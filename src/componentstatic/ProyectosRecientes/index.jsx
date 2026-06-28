@@ -48,8 +48,8 @@ const ProyectosRecientes = forwardRef((props, ref) => {
           href={`https://api.whatsapp.com/send?phone=573044266017&text=Hola%2C+quiero+más+información`}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block font-bebas text-2xl relative top-0 backdrop-blur-sm bg-blue-950/40 rounded-[8px] transition-all duration-300 ease-in-out hover:!text-black hover:bg-[#D4FF00] hover:backdrop-blur-none p-1 sm:p-3" 
-style={{ color: "#D4FF00", border: "1px solid #D4FF00" }}  >
+            className="inline-block font-bebas text-2xl relative top-0 backdrop-blur-sm bg-blue-950/40 rounded-[8px] transition-all duration-300 ease-in-out hover:!text-black hover:bg-[#D4FF00] hover:backdrop-blur-none p-1 sm:p-3" 
+style={{ color: "#D4FF00", border: "1px solid #D4FF00" }} style={{ color: "#D4FF00", border: "1px solid #D4FF00" }}  >
           ¡Empecemos a construir tu proyecto!
         </a>
       </div>
