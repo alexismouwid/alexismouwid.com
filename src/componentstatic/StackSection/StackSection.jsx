@@ -1,11 +1,5 @@
-// StackSection.jsx
-import React, { useRef, forwardRef } from "react";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import React, { forwardRef } from "react";
 import "../../tailwind.css";
-
-gsap.registerPlugin(ScrollTrigger);
 
 const stack = [
   { nombre: "Javascript", img: "https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg", categoria: "Lenguaje" },
@@ -23,42 +17,41 @@ const stack = [
 ];
 
 const StackSection = forwardRef((props, ref) => {
-
   return (
     <section
- ref={ref}
-     className="w-full py-24 px-6 flex flex-col items-center gap-8"
+      ref={ref}
+      className="w-full py-12 sm:py-20 px-4 sm:px-6 flex flex-col items-center gap-6 sm:gap-10"
     >
-      <div className="stack-title flex flex-col items-center gap-3 text-center">
-        <p className="text-sm tracking-[0.3em] uppercase text-[#D4FF00] font-mono">
+      <div className="flex flex-col items-center gap-2 text-center">
+        <p className="text-xs sm:text-sm tracking-[0.3em] uppercase text-[#D4FF00] font-mono">
           Tecnologías
         </p>
-        <h2 className="font-bebas text-5xl sm:text-6xl xl:text-7xl text-white">
+        <h2 className="font-bebas text-4xl sm:text-5xl xl:text-7xl text-white">
           Mi Stack Tecnológico
         </h2>
-        <p className="text-white font-sans text-base max-w-md">
+        <p className="text-white/70 font-sans text-sm sm:text-base max-w-xs sm:max-w-md">
           Herramientas y tecnologías con las que construyo soluciones reales.
         </p>
-        <div className="w-16 h-[2px] bg-[#D4FF00] mt-2" />
+        <div className="w-12 sm:w-16 h-[2px] bg-[#D4FF00] mt-1" />
       </div>
 
-      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-8 max-w-4xl w-full">
+      <div className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-6 gap-3 sm:gap-6 max-w-3xl w-full">
         {stack.map((item, i) => (
           <div
             key={i}
-            className="stack-item flex flex-col items-center gap-2 group cursor-default"
+            className="flex flex-col items-center gap-1 sm:gap-2 group cursor-default"
           >
-            <div className="w-16 h-16 flex items-center justify-center rounded-xl bg-white/5 border border-white/10 group-hover:border-[#D4FF00]/50 group-hover:bg-white/10 transition-all duration-300 p-3">
+            <div className="w-10 h-10 sm:w-14 sm:h-14 flex items-center justify-center rounded-lg sm:rounded-xl bg-white/5 border border-white/10 group-hover:border-[#D4FF00]/50 group-hover:bg-white/10 transition-all duration-300 p-2 sm:p-3">
               <img
                 src={item.img}
                 alt={item.nombre}
                 className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300"
               />
             </div>
-            <span className="text-white text-xs font-sans text-center group-hover:text-[#D4FF00] transition-colors duration-300">
+            <span className="text-white text-[10px] sm:text-xs font-sans text-center group-hover:text-[#D4FF00] transition-colors duration-300">
               {item.nombre}
             </span>
-            <span className="text-[10px] text-white font-mono uppercase tracking-wider">
+            <span className="hidden sm:block text-[9px] text-white/50 font-mono uppercase tracking-wider">
               {item.categoria}
             </span>
           </div>
